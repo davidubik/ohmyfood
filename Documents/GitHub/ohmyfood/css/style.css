@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #fcca46;
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  margin: 1% auto;
+}
+
+#container {
+  border: 3px solid chartreuse;
+}
+#container header, #container footer {
+  background: #559a86;
+  color: #fcca46;
+  height: 15vh;
+}
+#container h2 {
+  margin-top: 2%;
+  text-align: center;
+}
+#container header {
+  display: flex;
+  justify-content: center;
+  background: #559a86;
+}
+#container header .header__logo {
+  margin-top: 1.5%;
+}
+#container header .logo__ohmyfood {
+  width: 35vh;
+}
+#container main {
+  border: 2px solid blue;
+}
+#container .menu__container {
+  margin-left: 30%;
+}
+#container .menu__container .menu__main {
+  width: 25%;
+  margin: 2% 2% auto;
+}
+#container .menu__container .menu__main:hover {
+  transform: scale(1.4);
+  transition: transform 1000ms;
+}
+#container .note_enchantee {
+  background: #fcdfdb;
+  width: 55%;
+  margin-left: 22%;
+  margin-bottom: 2%;
+  font-family: "Satisfy";
+}
+#container .note_enchantee .section__logo {
+  text-align: center;
+  margin-top: 5%;
+}
+#container .note_enchantee .section__logo .logo__note-enchantee {
+  width: 20%;
+}
+#container .note_enchantee .section__logo .logo--note--head {
+  width: 30%;
+}
+#container .note_enchantee .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+#container .chic_francaise {
+  background: #fff5fe;
+  width: 55%;
+  margin-left: 22%;
+  margin-bottom: 2%;
+}
+#container .chic_francaise .chic_francaise__head .section__logo {
+  text-align: center;
+  margin-top: 5%;
+}
+#container .chic_francaise .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+#container .chic_francaise .entree--color {
+  color: #c67412;
+}
+#container .chic_francaise .plats--color {
+  color: #a56799;
+}
+#container .chic_francaise .deserts--color {
+  color: #6e4ccc;
+}
+#container .delice_papilles {
+  background: #eceeee;
+  width: 55%;
+  margin-left: 22%;
+  margin-bottom: 2%;
+  font-family: "Gaegu";
+}
+#container .delice_papilles .delice_papilles__head .section__logo {
+  text-align: center;
+  margin-top: 5%;
+}
+#container .delice_papilles .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+#container .palette_gout {
+  background: #fdfffd;
+  width: 55%;
+  margin-left: 22%;
+  margin-bottom: 2%;
+  font-family: "Caveat Brush";
+}
+#container .palette_gout .palette_gout__head .section__logo {
+  text-align: center;
+  margin-top: 5%;
+}
+#container .palette_gout .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+#container main section .mentions {
+  text-align: justify;
+  margin: 35px 35px auto;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+#container footer {
+  display: flex;
+  justify-content: space-around;
+}
+#container footer a {
+  margin-top: 3%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn a button {
+  background: #559a86;
+  color: #fcca46;
+  width: 40vh;
+  height: 8vh;
+  border: 1px solid #559a86;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 1.5em;
+}
