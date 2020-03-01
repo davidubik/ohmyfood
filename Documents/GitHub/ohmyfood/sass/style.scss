@@ -24,6 +24,64 @@ $color_logo: #fcca46;
   margin-top: 5%;
 }
 
+@mixin triangle_right
+{
+  border-style: solid;
+  border-width: 5px 5px 5px 40px;
+  margin-left: 15.8%;
+  position: absolute;
+  margin-top: -2.3%;
+}
+
+@mixin triangle_left
+{
+  border-style: solid;
+  border-width: 5px 200px 5px 0;
+  position : absolute;
+  margin-top: -2.3%;
+}
+
+@mixin triangle_left2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 60px 5px 0;
+  position: absolute;
+  margin-top: -2.3%;
+  margin-left: 35.4%;
+}
+
+@mixin triangle_right2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 190px;
+  border-color: transparent transparent transparent #007bff;
+  position : absolute;
+  margin-left: 7%;
+  margin-top: -2.3%;
+  margin-left: 40%;
+
+}
+
+@mixin note_svg_size_position_left
+{
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+
+@mixin note_svg_size_position_right
+{
+  position: absolute;
+  width: 15%;
+  margin-left: 32%;
+  margin-top: -2.5%;
+}
+
 //GENERAL
 
 *
@@ -107,39 +165,105 @@ ul
                 transition: transform 1000ms;
               }
             }
-
-
         }
 //MAIN SECTION
 
 
-//note ENCHANTEE
+//La NoTE ENCHANTEE
+
 
   .note_enchantee
   {
     background: #fcdfdb;
     @include menu_position_taille;
     font-family: 'Satisfy', ;
+    box-shadow: 2px 2px 2px 2px grey;
 
+    .border_texte
+    {
+      .border_texte__left
+      {
+        .note_border__svg
+        {
+          @include note_svg_size_position_left;
+        }
+      }
+      .border_texte__right
+      {
+        .note_border__svg
+        {
+          @include note_svg_size_position_right;
+        }
+      }
+
+      .border_texte__left--plats
+      {
+        width: 15%;
+        margin-top: -3.5%;
+        margin-left: 7%;
+        position: absolute;
+      }
+
+      .border_texte__right--plats
+      {
+        position: absolute;
+        width: 15%;
+        margin-left: 33%;
+        margin-top: -3.5%;
+      }
+
+      .border_texte__left--deserts
+      {
+        width: 15%;
+        margin-top: -3.5%;
+        margin-left: 6%;
+        position: absolute;
+      }
+      .border_texte__right--deserts
+      {
+        position: absolute;
+        width: 15%;
+        margin-left: 34%;
+        margin-top: -3.5%;
+      }
+    }
+
+//logo croche haut-de-page
     .section__logo
     {
       @include logo_position;
 
-      .logo__note-enchantee
-      {
-        width: 20%;
+        .fa-music
+        {
+          font-size: 4em;
+          margin-top: 2%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: linear-gradient(to right, #f25a61, #f25e60,#f68267,#f78f6a);
+        }
       }
-
-      .logo--note--head
-      {
-        width: 30%;
-      }
-    }
 
     .menu_page
     {
       @include entree_plats_desert_position;
     }
+  }
+
+//logo croche-bas-de-page
+  .section__logo__bottom
+  {
+      @include logo_position;
+
+    .fa-music--bottom
+    {
+      font-size: 2em;
+      margin-top: 2%;
+      margin-bottom: 5%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, #f25a61, #f25e60,#f68267,#f78f6a);
+    }
+
   }
 
 
@@ -156,6 +280,85 @@ ul
         @include logo_position;
       }
     }
+//Traingle coutour titre
+      .triangle_left
+      {
+        .right
+        {
+          @include triangle_right;
+          border-color: transparent transparent transparent #c67412;
+        }
+        .left
+        {
+          @include triangle_left;
+          border-color: transparent #c67412 transparent transparent ;
+        }
+      }
+
+      .triangle_right
+      {
+        .left2
+        {
+          @include triangle_left2;
+          border-color: transparent #c67412 transparent transparent;
+        }
+        .right2
+        {
+          @include triangle_right2;
+          border-color: transparent transparent transparent #c67412;
+        }
+      }
+
+      .triangle_left--plats
+      {
+        .right
+        {
+          border-color: transparent transparent transparent #a56799;
+        }
+
+          .left
+          {
+            border-color: transparent #a56799 transparent transparent ;
+          }
+      }
+
+      .triangle_right--plats
+      {
+        .left2
+        {
+          border-color: transparent #a56799 transparent transparent ;
+        }
+        .right2
+        {
+            border-color: transparent transparent transparent #a56799;
+        }
+      }
+
+      .triangle_left--deserts
+      {
+        .right
+        {
+            border-color: transparent transparent transparent #6e4ccc;
+        }
+        .left
+        {
+          border-color: transparent #6e4ccc transparent transparent ;
+        }
+      }
+
+      .triangle_right--deserts
+      {
+        .left2
+        {
+          border-color: transparent #6e4ccc transparent transparent ;
+        }
+
+        .right2
+        {
+            border-color: transparent transparent transparent #6e4ccc;
+        }
+      }
+
 
     .menu_page
     {
@@ -181,14 +384,47 @@ ul
     background: #eceeee;
     @include menu_position_taille;
     font-family: 'Gaegu';
+    box-shadow: 3px 3px 3px 3px grey ;
 
     .delice_papilles__head
     {
       .section__logo
       {
         @include logo_position;
+
+        .logo_papilles
+        {
+          background: -webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          background-clip: text;
+         -webkit-text-fill-color: transparent;
+        }
       }
     }
+
+//Lignes Contour Titre
+    .border_left_delices
+    {
+
+      .size_border_left_delices
+      {
+        width: 15%;
+        margin-top: -2.5%;
+        margin-left: 4%;
+        position: absolute;
+      }
+    }
+
+    .border_right_delices
+    {
+      .size_border_right_delices
+      {
+        position: absolute;
+        width: 15%;
+        margin-left: 36%;
+        margin-top: -2.5%;
+      }
+    }
+
     .menu_page
     {
       @include entree_plats_desert_position;
