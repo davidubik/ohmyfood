@@ -92,7 +92,7 @@ ul
         font-family: 'Baloo 2', cursive;
         .header__logo
         {
-          margin-top: 1.5%;
+
           .logo__ohmyfood
           {
             text-align: center;
@@ -244,84 +244,7 @@ ul
         }
       }
     }
-//Traingle coutour titre
-      /*.triangle_left
-      {
-        .right
-        {
-          @include triangle_right;
-          border-color: transparent transparent transparent #c67412;
-        }
-        .left
-        {
-          @include triangle_left;
-          border-color: transparent #c67412 transparent transparent ;
-        }
-      }
 
-      .triangle_right
-      {
-        .left2
-        {
-          @include triangle_left2;
-          border-color: transparent #c67412 transparent transparent;
-        }
-        .right2
-        {
-          @include triangle_right2;
-          border-color: transparent transparent transparent #c67412;
-        }
-      }
-
-      .triangle_left--plats
-      {
-        .right
-        {
-          border-color: transparent transparent transparent #a56799;
-        }
-
-          .left
-          {
-            border-color: transparent #a56799 transparent transparent ;
-          }
-      }
-
-      .triangle_right--plats
-      {
-        .left2
-        {
-          border-color: transparent #a56799 transparent transparent ;
-        }
-        .right2
-        {
-            border-color: transparent transparent transparent #a56799;
-        }
-      }
-
-      .triangle_left--deserts
-      {
-        .right
-        {
-            border-color: transparent transparent transparent #6e4ccc;
-        }
-        .left
-        {
-          border-color: transparent #6e4ccc transparent transparent ;
-        }
-      }
-
-      .triangle_right--deserts
-      {
-        .left2
-        {
-          border-color: transparent #6e4ccc transparent transparent ;
-        }
-
-        .right2
-        {
-            border-color: transparent transparent transparent #6e4ccc;
-        }
-      }*/
 
       .border_left_chic
       {
@@ -368,12 +291,12 @@ ul
 
         .logo_papilles
         {
-          -o-background-clip: text;
+          /*-o-background-clip: text;
           -o-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          -o-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          -webkit-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          -webkit-text-fill-color: transparent;
+          /*-o-text-fill-color: transparent;*/
+          -webkit-background-clip:text;
+          -webkit-background:-webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          /*-webkit-text-fill-color:transparen;*/
           background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
           background-clip: text;
         }
@@ -482,7 +405,7 @@ ul
               margin: 35px 35px auto;
               width: 50%;
               margin-left: 25%;
-              margin-top: 10%;
+              margin-top: 15%;
             }
           }
         }

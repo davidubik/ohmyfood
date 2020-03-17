@@ -1,44 +1,3 @@
-/*@mixin triangle_right
-{
-  border-style: solid;
-  border-width: 5px 5px 5px 40px;
-  margin-left: 15.8%;
-  position: absolute;
-  margin-top: -2.3%;
-}
-
-@mixin triangle_left
-{
-  width: 5%;
-  margin-top: -2.5%;
-  margin-left: 8%;
-  position: absolute;
-}
-
-@mixin triangle_left2
-{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 60px 5px 0;
-  position: absolute;
-  margin-top: -2.3%;
-  margin-left: 35.4%;
-}
-
-@mixin triangle_right2
-{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0 5px 188px;
-  border-color: transparent transparent transparent #007bff;
-  position : absolute;
-  margin-left: 7%;
-  margin-top: -2.3%;
-  margin-left: 40%;
-
-}*/
 * {
   box-sizing: border-box;
 }
@@ -195,9 +154,6 @@ ul li {
   background: #559a86;
   font-family: "Baloo 2", cursive;
 }
-#container header .header__logo {
-  margin-top: 1.5%;
-}
 #container header .header__logo .logo__ohmyfood {
   text-align: center;
 }
@@ -295,83 +251,6 @@ ul li {
   width: 55%;
   margin-left: 22%;
   margin-bottom: 2%;
-  /*.triangle_left
-  {
-    .right
-    {
-      @include triangle_right;
-      border-color: transparent transparent transparent #c67412;
-    }
-    .left
-    {
-      @include triangle_left;
-      border-color: transparent #c67412 transparent transparent ;
-    }
-  }
-
-  .triangle_right
-  {
-    .left2
-    {
-      @include triangle_left2;
-      border-color: transparent #c67412 transparent transparent;
-    }
-    .right2
-    {
-      @include triangle_right2;
-      border-color: transparent transparent transparent #c67412;
-    }
-  }
-
-  .triangle_left--plats
-  {
-    .right
-    {
-      border-color: transparent transparent transparent #a56799;
-    }
-
-      .left
-      {
-        border-color: transparent #a56799 transparent transparent ;
-      }
-  }
-
-  .triangle_right--plats
-  {
-    .left2
-    {
-      border-color: transparent #a56799 transparent transparent ;
-    }
-    .right2
-    {
-        border-color: transparent transparent transparent #a56799;
-    }
-  }
-
-  .triangle_left--deserts
-  {
-    .right
-    {
-        border-color: transparent transparent transparent #6e4ccc;
-    }
-    .left
-    {
-      border-color: transparent #6e4ccc transparent transparent ;
-    }
-  }
-
-  .triangle_right--deserts
-  {
-    .left2
-    {
-      border-color: transparent #6e4ccc transparent transparent ;
-    }
-
-    .right2
-    {
-        border-color: transparent transparent transparent #6e4ccc;
-    }
-  }*/
 }
 #container .chic_francaise .chic_francaise__head .section__logo {
   text-align: center;
@@ -420,12 +299,12 @@ ul li {
   margin-top: 5%;
 }
 #container .delice_papilles .delice_papilles__head .section__logo .logo_papilles {
-  -o-background-clip: text;
-  -o-background: linear-gradient(#0228dd, #6b6beb, #dbeaf4);
-  -o-text-fill-color: transparent;
+  /*-o-background-clip: text;
+  -o-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+  /*-o-text-fill-color: transparent;*/
   -webkit-background-clip: text;
-  -webkit-background: linear-gradient(#0228dd, #6b6beb, #dbeaf4);
-  -webkit-text-fill-color: transparent;
+  -webkit-background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
+  /*-webkit-text-fill-color:transparen;*/
   background: linear-gradient(#0228dd, #6b6beb, #dbeaf4);
   background-clip: text;
 }
@@ -494,7 +373,7 @@ ul li {
   margin: 35px 35px auto;
   width: 50%;
   margin-left: 25%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 #container .btn {
   display: flex;
