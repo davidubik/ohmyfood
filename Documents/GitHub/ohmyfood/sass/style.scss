@@ -1,86 +1,7 @@
 
-//Variabes
-$color_header-footer:#559a86;
-$color_logo: #fcca46;
+@import "variables.scss";
+@import "mixins.scss";
 
-
-//MIXINS
-@mixin menu_position_taille
-{
-  width: 55%;
-  margin-left: 22%;
-  margin-bottom: 2%;
-}
-
-@mixin entree_plats_desert_position
-{
-  display: flex;
-  margin-left: 15%;
-}
-
-@mixin logo_position
-{
-  text-align: center;
-  margin-top: 5%;
-}
-
-@mixin triangle_right
-{
-  border-style: solid;
-  border-width: 5px 5px 5px 40px;
-  margin-left: 15.8%;
-  position: absolute;
-  margin-top: -2.3%;
-}
-
-@mixin triangle_left
-{
-  border-style: solid;
-  border-width: 5px 200px 5px 0;
-  position : absolute;
-  margin-top: -2.3%;
-}
-
-@mixin triangle_left2
-{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 60px 5px 0;
-  position: absolute;
-  margin-top: -2.3%;
-  margin-left: 35.4%;
-}
-
-@mixin triangle_right2
-{
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0 5px 190px;
-  border-color: transparent transparent transparent #007bff;
-  position : absolute;
-  margin-left: 7%;
-  margin-top: -2.3%;
-  margin-left: 40%;
-
-}
-
-@mixin note_svg_size_position_left
-{
-  width: 15%;
-  margin-top: -2.5%;
-  margin-left: 8%;
-  position: absolute;
-}
-
-@mixin note_svg_size_position_right
-{
-  position: absolute;
-  width: 15%;
-  margin-left: 32%;
-  margin-top: -2.5%;
-}
 
 //GENERAL
 
@@ -98,6 +19,38 @@ a
 {
   color: $color_logo;
   text-decoration: none;
+}
+
+//hover titre note enchantée
+.titre_note
+{
+  @include underligne_note;
+}
+
+//hover titre chic à la française
+.titre_chic_entree
+{
+  @include underligne_chic_entree;
+}
+
+.titre_chic_plats
+{
+  @include underligne_chic_plats;
+}
+
+.titre_chic_deserts
+{
+  @include underligne_chic_deserts;
+}
+
+.titre_delice
+{
+  @include underligne_delice;
+}
+
+.titre_palette
+{
+  @include underligne_palette;
 }
 
 h3
@@ -123,6 +76,7 @@ ul
       background: $color_header-footer;
       color: $color_logo;
       height: 15vh;
+      font-family: 'Baloo 2', cursive;
     }
       h2
       {
@@ -135,21 +89,21 @@ ul
         display: flex;
         justify-content: center;
         background: $color_header-footer;
-
+        font-family: 'Baloo 2', cursive;
         .header__logo
         {
           margin-top: 1.5%;
+          .logo__ohmyfood
+          {
+            text-align: center;
+          }
         }
-        .logo__ohmyfood
-        {
-          width: 35vh;
-        }
+
       }
 //MAIN & MENU CONTAINER
       main
       {
         border: 2px solid blue;
-      }
 
         .menu__container
         {
@@ -165,9 +119,8 @@ ul
                 transition: transform 1000ms;
               }
             }
+          }
         }
-//MAIN SECTION
-
 
 //La NoTE ENCHANTEE
 
@@ -237,6 +190,10 @@ ul
         {
           font-size: 4em;
           margin-top: 2%;
+          -o-background-clip: text;
+          -o-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-image: linear-gradient(to right, #f25a61, #f25e60,#f68267,#f78f6a);
@@ -278,10 +235,17 @@ ul
       .section__logo
       {
         @include logo_position;
+
+        .chic_titre_degrader
+        {
+          background: -webkit-linear-gradient(#e38913,#b57094,#aa6ab2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
 //Traingle coutour titre
-      .triangle_left
+      /*.triangle_left
       {
         .right
         {
@@ -357,6 +321,16 @@ ul
         {
             border-color: transparent transparent transparent #6e4ccc;
         }
+      }*/
+
+      .border_left_chic
+      {
+        @include border_left_chic;
+      }
+
+      .border_right_chic
+      {
+        @include border_right_chic;
       }
 
 
@@ -394,9 +368,14 @@ ul
 
         .logo_papilles
         {
-          background: -webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          -o-background-clip: text;
+          -o-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          -o-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          -webkit-text-fill-color: transparent;
+          background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
           background-clip: text;
-         -webkit-text-fill-color: transparent;
         }
       }
     }
@@ -443,8 +422,48 @@ ul
         .section__logo
         {
           @include logo_position;
+
+          .palette_titre_degrader
+          {
+            background: -webkit-linear-gradient(#409241,#5fab54,#97e266,#b7f982);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
         }
       }
+
+      .border_palette
+      {
+        .img__border_left_palette
+        {
+          width: 15%;
+          margin-top: -2.5%;
+          margin-left: 8%;
+          position: absolute;
+        }
+        .img__border_right_palette
+        {
+          position: absolute;
+          width: 15%;
+          margin-left: 32%;
+          margin-top: -2.5%;
+        }
+        .img__border_left_palette--plats
+        {
+          width: 15%;
+          margin-top: -2.5%;
+          margin-left: 6%;
+          position: absolute;
+        }
+        .img__border_right_palette--plats
+        {
+          position: absolute;
+          width: 15%;
+          margin-left: 33%;
+          margin-top: -2.5%;
+        }
+      }
+
       .menu_page
       {
         @include entree_plats_desert_position;
@@ -467,35 +486,71 @@ ul
             }
           }
         }
-  // FOOTER
-        footer
-        {
-          display: flex;
-          justify-content: space-around;
-            a
-            {
-              margin-top:3%;
-            }
-        }
-      }
 //BOUTON
       .btn
         {
           display: flex;
           justify-content: center;
+          font-family: 'Baloo 2', cursive;
             a
             {
-                button
+                .button
                 {
                   background: $color_header-footer;
                   color: $color_logo;
                   width: 40vh;
-                  height: 8vh;
+                  height: 6vh;
                   border: 1px solid $color_header-footer;
                   border-radius: 10px 10px 10px 10px;
                   margin-top: 10%;
                   margin-bottom: 10%;
                   font-size: 1.5em;
+                  text-align: center;
                 }
             }
         }
+//EFFET TROIS PETIS POINTS
+    .trois_petits_points
+    {
+      animation-name: trois_petits_points_effet;
+      animation-iteration-count: infinite;
+      animation-duration: 0.7s;
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    }
+
+      @keyframes trois_petits_points_effet
+      {
+
+      0% {
+        opacity: 0.1;
+        width: 100px;
+        height: 100px;
+        background-size:contain;
+      }
+      100% {
+        opacity: 8;
+        width: 500px;
+        height: 500px;
+        background-size:contain;
+      }
+    }
+
+
+        // FOOTER
+              footer
+              {
+                display: flex;
+                justify-content: space-around;
+                font-family: 'Baloo 2', cursive;
+                  a
+                  {
+                    margin-top:3%;
+                    .btn_footer
+                    {
+                      @include effet_wiggle;
+                    }
+                  }
+              }
+            }

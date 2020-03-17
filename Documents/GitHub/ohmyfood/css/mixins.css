@@ -1,0 +1,41 @@
+/*@mixin triangle_right
+{
+  border-style: solid;
+  border-width: 5px 5px 5px 40px;
+  margin-left: 15.8%;
+  position: absolute;
+  margin-top: -2.3%;
+}
+
+@mixin triangle_left
+{
+  width: 5%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+
+@mixin triangle_left2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 60px 5px 0;
+  position: absolute;
+  margin-top: -2.3%;
+  margin-left: 35.4%;
+}
+
+@mixin triangle_right2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 188px;
+  border-color: transparent transparent transparent #007bff;
+  position : absolute;
+  margin-left: 7%;
+  margin-top: -2.3%;
+  margin-left: 40%;
+
+}*/

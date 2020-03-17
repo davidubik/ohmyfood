@@ -1,0 +1,253 @@
+//MIXINS
+@mixin menu_position_taille
+{
+  width: 55%;
+  margin-left: 22%;
+  margin-bottom: 2%;
+}
+
+@mixin entree_plats_desert_position
+{
+  display: flex;
+  margin-left: 15%;
+}
+
+@mixin logo_position
+{
+  text-align: center;
+  margin-top: 5%;
+}
+
+@mixin border_left_chic
+{
+  width: 16%;
+  margin-left: 2%;
+  margin-top: -3%;
+  position: absolute;
+}
+
+@mixin border_right_chic
+{
+  position: absolute;
+  width: 15%;
+  margin-left: 36%;
+  margin-top: -3%;
+}
+
+/*@mixin triangle_right
+{
+  border-style: solid;
+  border-width: 5px 5px 5px 40px;
+  margin-left: 15.8%;
+  position: absolute;
+  margin-top: -2.3%;
+}
+
+@mixin triangle_left
+{
+  width: 5%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+
+@mixin triangle_left2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 60px 5px 0;
+  position: absolute;
+  margin-top: -2.3%;
+  margin-left: 35.4%;
+}
+
+@mixin triangle_right2
+{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 188px;
+  border-color: transparent transparent transparent #007bff;
+  position : absolute;
+  margin-left: 7%;
+  margin-top: -2.3%;
+  margin-left: 40%;
+
+}*/
+
+@mixin note_svg_size_position_left
+{
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+
+@mixin note_svg_size_position_right
+{
+  position: absolute;
+  width: 15%;
+  margin-left: 32%;
+  margin-top: -2.5%;
+}
+
+@mixin underligne_note
+{
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:40%;
+     right:80%;
+     bottom:0;
+     background:#000;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:40%;
+  }
+}
+
+@mixin underligne_chic_entree
+{
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:#c67412;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+@mixin underligne_chic_plats
+{
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:#a56799;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+@mixin underligne_chic_deserts
+{
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:#6e4ccc;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+@mixin underligne_delice
+{
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:#0228dd;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+@mixin underligne_palette
+{
+  text-align:center;
+  position:relative; overflow:hidden;
+  &:before
+  {
+    content:""; position:absolute;
+     z-index:2;
+     left:41%;
+     right:60%;
+     bottom:0;
+     background:#16c34c;
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+@mixin effet_wiggle
+{
+  &:hover
+  {
+-webkit-animation: wiggle 1s 1;
+animation: wiggle 1s 1;
+}
+
+@keyframes wiggle{
+0% {
+  transform: rotate(-8deg);
+}
+
+25% {
+  transform: rotate(8deg);
+}
+
+50% {
+  transform: rotate(-4deg);
+}
+
+75% {
+  transform: rotate(4deg);
+}
+
+85% {
+  transform: rotate(-2deg);
+}
+
+93% {
+  transform: rotate(1deg);
+}
+
+100% {
+  transform: rotate(0px);
+    }
+  }
+}
