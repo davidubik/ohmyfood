@@ -166,6 +166,7 @@ ul li {
 #container main .menu__container .menu__main {
   width: 25%;
   margin: 2% 2% auto;
+  box-shadow: 3px 3px 3px 3px grey;
 }
 #container main .menu__container .menu__main:hover {
   transform: scale(1.4);
@@ -177,7 +178,7 @@ ul li {
   margin-left: 22%;
   margin-bottom: 2%;
   font-family: "Satisfy";
-  box-shadow: 2px 2px 2px 2px grey;
+  box-shadow: 3px 3px 3px 3px grey;
 }
 #container .note_enchantee .border_texte .border_texte__left .note_border__svg {
   width: 15%;
@@ -251,6 +252,7 @@ ul li {
   width: 55%;
   margin-left: 22%;
   margin-bottom: 2%;
+  box-shadow: 3px 3px 3px 3px grey;
 }
 #container .chic_francaise .chic_francaise__head .section__logo {
   text-align: center;
@@ -299,14 +301,9 @@ ul li {
   margin-top: 5%;
 }
 #container .delice_papilles .delice_papilles__head .section__logo .logo_papilles {
-  /*-o-background-clip: text;
-  -o-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-  /*-o-text-fill-color: transparent;*/
+  background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
   -webkit-background-clip: text;
-  -webkit-background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
-  /*-webkit-text-fill-color:transparen;*/
-  background: linear-gradient(#0228dd, #6b6beb, #dbeaf4);
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #container .delice_papilles .border_left_delices .size_border_left_delices {
   width: 15%;
@@ -330,6 +327,7 @@ ul li {
   margin-left: 22%;
   margin-bottom: 2%;
   font-family: "Caveat Brush";
+  box-shadow: 3px 3px 3px 3px grey;
 }
 #container .palette_gout .palette_gout__head .section__logo {
   text-align: center;
@@ -372,8 +370,8 @@ ul li {
   text-align: justify;
   margin: 35px 35px auto;
   width: 50%;
+  margin-bottom: 10%;
   margin-left: 25%;
-  margin-top: 15%;
 }
 #container .btn {
   display: flex;

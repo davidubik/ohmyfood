@@ -113,6 +113,7 @@ ul
             {
               width: 25%;
               margin: 2% 2% auto;
+              @include border_shadow_menu;
               &:hover
               {
                 transform: scale(1.40);
@@ -130,7 +131,7 @@ ul
     background: #fcdfdb;
     @include menu_position_taille;
     font-family: 'Satisfy', ;
-    box-shadow: 2px 2px 2px 2px grey;
+    @include border_shadow_menu;
 
     .border_texte
     {
@@ -229,6 +230,7 @@ ul
   {
     background: #fff5fe;
     @include menu_position_taille;
+    @include border_shadow_menu;
 
     .chic_francaise__head
     {
@@ -281,7 +283,7 @@ ul
     background: #eceeee;
     @include menu_position_taille;
     font-family: 'Gaegu';
-    box-shadow: 3px 3px 3px 3px grey ;
+    box-shadow: 3px 3px 3px 3px grey;
 
     .delice_papilles__head
     {
@@ -291,14 +293,9 @@ ul
 
         .logo_papilles
         {
-          /*-o-background-clip: text;
-          -o-background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          /*-o-text-fill-color: transparent;*/
-          -webkit-background-clip:text;
-          -webkit-background:-webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          /*-webkit-text-fill-color:transparen;*/
-          background: linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          background-clip: text;
+          background: -webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
     }
@@ -339,6 +336,7 @@ ul
     background: #fdfffd;
     @include menu_position_taille;
     font-family: 'Caveat Brush', ;
+    @include border_shadow_menu;
 
       .palette_gout__head
       {
@@ -404,8 +402,8 @@ ul
               text-align: justify;
               margin: 35px 35px auto;
               width: 50%;
+              margin-bottom: 10%;
               margin-left: 25%;
-              margin-top: 15%;
             }
           }
         }
