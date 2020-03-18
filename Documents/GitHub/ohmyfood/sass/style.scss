@@ -71,6 +71,7 @@ ul
 {
   border: 3px solid chartreuse;
 
+
     header, footer
     {
       background: $color_header-footer;
@@ -106,22 +107,22 @@ ul
         border: 2px solid blue;
 
         .menu__container
-        {
-          margin-left: 30%;
-// IMG ANIMATE
-            .menu__main
-            {
-              width: 25%;
-              margin: 2% 2% auto;
-              @include border_shadow_menu;
-              &:hover
-              {
-                transform: scale(1.40);
-                transition: transform 1000ms;
-              }
-            }
-          }
-        }
+         {
+           margin-left: 30%;
+ // IMG ANIMATE
+             .menu__main
+             {
+               width: 25%;
+               margin: 2% 2% auto;
+               @include border_shadow_menu;
+               &:hover
+               {
+                 transform: scale(1.40);
+                 transition: transform 1000ms;
+               }
+             }
+           }
+       }
 
 //La NoTE ENCHANTEE
 
@@ -464,6 +465,9 @@ ul
               {
                 display: flex;
                 justify-content: space-around;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
                 font-family: 'Baloo 2', cursive;
                   a
                   {

@@ -415,6 +415,9 @@ ul li {
 #container footer {
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   font-family: "Baloo 2", cursive;
 }
 #container footer a {
