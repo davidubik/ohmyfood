@@ -107,21 +107,29 @@ ul
         border: 2px solid blue;
 
         .menu__container
-         {
-           margin-left: 30%;
- // IMG ANIMATE
-             .menu__main
-             {
-               width: 25%;
-               margin: 2% 2% auto;
-               @include border_shadow_menu;
-               &:hover
-               {
-                 transform: scale(1.40);
-                 transition: transform 1000ms;
-               }
-             }
-           }
+       {
+         text-align: center;
+         display: flex;
+         height: 80vh;
+// IMG ANIMATE
+          .lien__menus
+          {
+            overflow: hidden;
+            display: block;
+            .menu__main
+            {
+              width: 50%;
+              margin: 2% 2% auto;
+              @include border_shadow_menu;
+
+              &:hover
+              {
+                transform: scale(1.40);
+                transition: transform 1000ms;
+              }
+            }
+          }
+         }
        }
 
 //La NoTE ENCHANTEE

@@ -161,14 +161,20 @@ ul li {
   border: 2px solid blue;
 }
 #container main .menu__container {
-  margin-left: 30%;
+  text-align: center;
+  display: flex;
+  height: 80vh;
 }
-#container main .menu__container .menu__main {
-  width: 25%;
+#container main .menu__container .lien__menus {
+  overflow: hidden;
+  display: block;
+}
+#container main .menu__container .lien__menus .menu__main {
+  width: 50%;
   margin: 2% 2% auto;
   box-shadow: 3px 3px 3px 3px grey;
 }
-#container main .menu__container .menu__main:hover {
+#container main .menu__container .lien__menus .menu__main:hover {
   transform: scale(1.4);
   transition: transform 1000ms;
 }
