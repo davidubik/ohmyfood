@@ -1,0 +1,64 @@
+
+    /*GENERAL*/
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+}
+
+a
+{
+  color: $color_logo;
+  text-decoration: none;
+}
+
+  /*hover titre note enchantée*/
+.titre_note
+{
+  @include underligne_note;
+}
+
+  /*hover titre chic à la française*/
+.titre_chic_entree
+{
+  @include underligne_chic_entree;
+}
+
+.titre_chic_plats
+{
+  @include underligne_chic_plats;
+}
+
+.titre_chic_deserts
+{
+  @include underligne_chic_deserts;
+}
+
+.titre_delice
+{
+  @include underligne_delice;
+}
+
+.titre_palette
+{
+  @include underligne_palette;
+}
+
+h3
+{
+  text-align: center;
+}
+
+ul
+{
+  li
+  {
+    list-style: none;
+    margin: 1% auto;
+  }
+}

@@ -1,76 +1,14 @@
 
 @import "variables.scss";
 @import "mixins.scss";
+@import "_bases.scss";
 
 
-//GENERAL
-
-*
-{
-  box-sizing: border-box;
-}
-
-body
-{
-  margin: 0;
-}
-
-a
-{
-  color: $color_logo;
-  text-decoration: none;
-}
-
-//hover titre note enchantée
-.titre_note
-{
-  @include underligne_note;
-}
-
-//hover titre chic à la française
-.titre_chic_entree
-{
-  @include underligne_chic_entree;
-}
-
-.titre_chic_plats
-{
-  @include underligne_chic_plats;
-}
-
-.titre_chic_deserts
-{
-  @include underligne_chic_deserts;
-}
-
-.titre_delice
-{
-  @include underligne_delice;
-}
-
-.titre_palette
-{
-  @include underligne_palette;
-}
-
-h3
-{
-  text-align: center;
-}
-
-ul
-{
-  li
-  {
-    list-style: none;
-    margin: 1% auto;
-  }
-}
 
 #container
 {
   border: 3px solid chartreuse;
-
+  height: 125vh;
 
     header, footer
     {
@@ -84,7 +22,11 @@ ul
         margin-top: 2%;
         text-align: center;
       }
-//HEADER
+
+      /*INDEX*/
+
+      /*HEADER*/
+
       header
       {
         display: flex;
@@ -97,55 +39,65 @@ ul
           .logo__ohmyfood
           {
             text-align: center;
+            @include logo_position;
           }
         }
 
       }
-//MAIN & MENU CONTAINER
+
+      /*MAIN & MENU CONTAINER*/
       main
       {
         border: 2px solid blue;
+        height: 120vh;
 
-        .menu__container
-       {
-         text-align: center;
-         display: flex;
-         height: 80vh;
-// IMG ANIMATE
-          .lien__menus
-          {
-            overflow: hidden;
-            display: block;
-            .menu__main
+        .containerLiens
+        {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          background: red;
+          overflow: hidden;
+          .menu__container
+         {
+
+           text-align: center;
+           /*IMG ANIMATE*/
+            .lien__menus
             {
-              width: 50%;
-              margin: 2% 2% auto;
-              @include border_shadow_menu;
-
-              &:hover
+              overflow: hidden;
+              .menu__main
               {
-                transform: scale(1.40);
-                transition: transform 1000ms;
+                @include border_shadow_menu;
+                margin: 2%;
+                width: 15%;
+                overflow: hidden;
+                &:hover
+                {
+                  transform: scale(1.40);
+                  transition: transform 1000ms;
+                }
               }
             }
           }
-         }
-       }
+        }
+      }
 
-//La NoTE ENCHANTEE
-
+     /*LA Note ENCHANTEE*/
 
   .note_enchantee
   {
     background: #fcdfdb;
     @include menu_position_taille;
-    font-family: 'Satisfy', ;
+    font-family: 'Satisfy';
     @include border_shadow_menu;
+
 
     .border_texte
     {
       .border_texte__left
       {
+
         .note_border__svg
         {
           @include note_svg_size_position_left;
@@ -191,7 +143,7 @@ ul
       }
     }
 
-//logo croche haut-de-page
+    /*logo croche haut-de-page*/
     .section__logo
     {
       @include logo_position;
@@ -216,7 +168,7 @@ ul
     }
   }
 
-//logo croche-bas-de-page
+  /*logo croche-bas-de-page*/
   .section__logo__bottom
   {
       @include logo_position;
@@ -224,7 +176,6 @@ ul
     .fa-music--bottom
     {
       font-size: 2em;
-      margin-top: 2%;
       margin-bottom: 5%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -234,7 +185,10 @@ ul
   }
 
 
-//CHIC À LA FRANÇAISE
+  /*CHIC À LA FRANÇAISE*/
+
+
+
   .chic_francaise
   {
     background: #fff5fe;
@@ -243,6 +197,7 @@ ul
 
     .chic_francaise__head
     {
+
       .section__logo
       {
         @include logo_position;
@@ -286,7 +241,8 @@ ul
     }
   }
 
-  //LE DÉLICE DES PAPILLES
+
+    /*LE DÉLICE DES PAPILLES*/
   .delice_papilles
   {
     background: #eceeee;
@@ -309,7 +265,8 @@ ul
       }
     }
 
-//Lignes Contour Titre
+    /*Lignes Contour Titre*/
+
     .border_left_delices
     {
 
@@ -339,7 +296,8 @@ ul
     }
   }
 
-  //LA PALETTE DU GOÛT
+    /*LA PALETTE DU GOÛT*/
+
   .palette_gout
   {
     background: #fdfffd;
@@ -401,7 +359,7 @@ ul
   }
 
 
-//MENTIONS LEGALES
+    /*MENTIONS LEGALES*/
         main
         {
           section
@@ -416,30 +374,33 @@ ul
             }
           }
         }
-//BOUTON
+
+      /*BOUTON*/
+
       .btn
         {
-          display: flex;
-          justify-content: center;
           font-family: 'Baloo 2', cursive;
             a
             {
+              display: flex;
+              justify-content: center;
                 .button
                 {
+                  position: absolute;
+                  margin-top: 2.5%;
                   background: $color_header-footer;
                   color: $color_logo;
-                  width: 40vh;
-                  height: 6vh;
                   border: 1px solid $color_header-footer;
                   border-radius: 10px 10px 10px 10px;
-                  margin-top: 10%;
-                  margin-bottom: 10%;
                   font-size: 1.5em;
+                  width: 20%;
                   text-align: center;
                 }
             }
         }
-//EFFET TROIS PETIS POINTS
+
+        /*EFFET TROIS PETITS POINTS*/
+
     .trois_petits_points
     {
       animation-name: trois_petits_points_effet;
@@ -468,7 +429,8 @@ ul
     }
 
 
-        // FOOTER
+          /*FOOTER*/
+
               footer
               {
                 display: flex;
@@ -476,12 +438,14 @@ ul
                 position: fixed;
                 bottom: 0;
                 width: 100%;
+                height: 10vh;
                 font-family: 'Baloo 2', cursive;
                   a
                   {
-                    margin-top:3%;
+
                     .btn_footer
                     {
+                      margin-top: 20%;
                       @include effet_wiggle;
                     }
                   }

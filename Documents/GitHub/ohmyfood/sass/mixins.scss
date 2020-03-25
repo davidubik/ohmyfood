@@ -3,7 +3,7 @@
 {
   width: 55%;
   margin-left: 22%;
-  margin-bottom:2%;
+  margin-bottom:10%;
 }
 
 @mixin entree_plats_desert_position
@@ -15,7 +15,7 @@
 @mixin logo_position
 {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 @mixin border_left_chic
@@ -57,7 +57,8 @@
   overflow:hidden;
   &:before
   {
-    content:""; position:absolute;
+    content:"";
+    position:absolute;
      z-index:2;
      left:40%;
      right:80%;

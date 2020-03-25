@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*GENERAL*/
 * {
   box-sizing: border-box;
 }
@@ -11,6 +13,7 @@ a {
   text-decoration: none;
 }
 
+/*hover titre note enchantée*/
 .titre_note {
   position: relative;
   overflow: hidden;
@@ -30,6 +33,7 @@ a {
   right: 40%;
 }
 
+/*hover titre chic à la française*/
 .titre_chic_entree {
   position: relative;
   overflow: hidden;
@@ -137,6 +141,19 @@ ul li {
 
 #container {
   border: 3px solid chartreuse;
+  height: 125vh;
+  /*INDEX*/
+  /*HEADER*/
+  /*MAIN & MENU CONTAINER*/
+  /*LA Note ENCHANTEE*/
+  /*logo croche-bas-de-page*/
+  /*CHIC À LA FRANÇAISE*/
+  /*LE DÉLICE DES PAPILLES*/
+  /*LA PALETTE DU GOÛT*/
+  /*MENTIONS LEGALES*/
+  /*BOUTON*/
+  /*EFFET TROIS PETITS POINTS*/
+  /*FOOTER*/
 }
 #container header, #container footer {
   background: #559a86;
@@ -156,25 +173,34 @@ ul li {
 }
 #container header .header__logo .logo__ohmyfood {
   text-align: center;
+  text-align: center;
+  margin-top: 8%;
 }
 #container main {
   border: 2px solid blue;
+  height: 120vh;
 }
-#container main .menu__container {
-  text-align: center;
+#container main .containerLiens {
   display: flex;
-  height: 80vh;
-}
-#container main .menu__container .lien__menus {
+  justify-content: center;
+  flex-wrap: wrap;
+  background: red;
   overflow: hidden;
-  display: block;
 }
-#container main .menu__container .lien__menus .menu__main {
-  width: 50%;
-  margin: 2% 2% auto;
+#container main .containerLiens .menu__container {
+  text-align: center;
+  /*IMG ANIMATE*/
+}
+#container main .containerLiens .menu__container .lien__menus {
+  overflow: hidden;
+}
+#container main .containerLiens .menu__container .lien__menus .menu__main {
   box-shadow: 3px 3px 3px 3px grey;
+  margin: 2%;
+  width: 15%;
+  overflow: hidden;
 }
-#container main .menu__container .lien__menus .menu__main:hover {
+#container main .containerLiens .menu__container .lien__menus .menu__main:hover {
   transform: scale(1.4);
   transition: transform 1000ms;
 }
@@ -182,9 +208,10 @@ ul li {
   background: #fcdfdb;
   width: 55%;
   margin-left: 22%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   font-family: "Satisfy";
   box-shadow: 3px 3px 3px 3px grey;
+  /*logo croche haut-de-page*/
 }
 #container .note_enchantee .border_texte .border_texte__left .note_border__svg {
   width: 15%;
@@ -224,7 +251,7 @@ ul li {
 }
 #container .note_enchantee .section__logo {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 #container .note_enchantee .section__logo .fa-music {
   font-size: 4em;
@@ -243,11 +270,10 @@ ul li {
 }
 #container .section__logo__bottom {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 #container .section__logo__bottom .fa-music--bottom {
   font-size: 2em;
-  margin-top: 2%;
   margin-bottom: 5%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -257,12 +283,12 @@ ul li {
   background: #fff5fe;
   width: 55%;
   margin-left: 22%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   box-shadow: 3px 3px 3px 3px grey;
 }
 #container .chic_francaise .chic_francaise__head .section__logo {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 #container .chic_francaise .chic_francaise__head .section__logo .chic_titre_degrader {
   background: -webkit-linear-gradient(#e38913, #b57094, #aa6ab2);
@@ -298,13 +324,14 @@ ul li {
   background: #eceeee;
   width: 55%;
   margin-left: 22%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   font-family: "Gaegu";
   box-shadow: 3px 3px 3px 3px grey;
+  /*Lignes Contour Titre*/
 }
 #container .delice_papilles .delice_papilles__head .section__logo {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 #container .delice_papilles .delice_papilles__head .section__logo .logo_papilles {
   background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
@@ -331,13 +358,13 @@ ul li {
   background: #fdfffd;
   width: 55%;
   margin-left: 22%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
   font-family: "Caveat Brush";
   box-shadow: 3px 3px 3px 3px grey;
 }
 #container .palette_gout .palette_gout__head .section__logo {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 #container .palette_gout .palette_gout__head .section__logo .palette_titre_degrader {
   background: -webkit-linear-gradient(#409241, #5fab54, #97e266, #b7f982);
@@ -380,20 +407,21 @@ ul li {
   margin-left: 25%;
 }
 #container .btn {
-  display: flex;
-  justify-content: center;
   font-family: "Baloo 2", cursive;
 }
+#container .btn a {
+  display: flex;
+  justify-content: center;
+}
 #container .btn a .button {
+  position: absolute;
+  margin-top: 2.5%;
   background: #559a86;
   color: #fcca46;
-  width: 40vh;
-  height: 6vh;
   border: 1px solid #559a86;
   border-radius: 10px 10px 10px 10px;
-  margin-top: 10%;
-  margin-bottom: 10%;
   font-size: 1.5em;
+  width: 20%;
   text-align: center;
 }
 #container .trois_petits_points {
@@ -424,10 +452,11 @@ ul li {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 10vh;
   font-family: "Baloo 2", cursive;
 }
-#container footer a {
-  margin-top: 3%;
+#container footer a .btn_footer {
+  margin-top: 20%;
 }
 #container footer a .btn_footer:hover {
   -webkit-animation: wiggle 1s 1;
