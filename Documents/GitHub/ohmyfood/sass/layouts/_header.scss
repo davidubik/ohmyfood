@@ -1,0 +1,19 @@
+//HEADER
+
+header
+{
+  display: flex;
+  justify-content: center;
+  background: $color_header-footer;
+  font-family: 'Baloo 2', cursive;
+  .header__logo
+  {
+
+    .logo__ohmyfood
+    {
+      text-align: center;
+      @include logo_position;
+    }
+  }
+
+}

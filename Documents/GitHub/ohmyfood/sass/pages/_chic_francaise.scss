@@ -1,0 +1,55 @@
+/*CHIC À LA FRANÇAISE*/
+
+
+.chic_francaise
+{
+  background: #fff5fe;
+  @include menu_position_taille;
+  @include border_shadow_menu;
+  height: 100vh;
+
+  .chic_francaise__head
+  {
+
+    .section__logo
+    {
+      @include logo_position;
+
+      .chic_titre_degrader
+      {
+        background: -webkit-linear-gradient(#e38913,#b57094,#aa6ab2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+
+    .border_left_chic
+    {
+      @include border_left_chic;
+    }
+
+    .border_right_chic
+    {
+      @include border_right_chic;
+    }
+
+
+  .menu_page
+  {
+    @include entree_plats_desert_position
+  }
+  .entree--color
+  {
+    color: #c67412;
+  }
+  .plats--color
+  {
+    color: #a56799;
+  }
+  .deserts--color
+  {
+    color: #6e4ccc;
+  }
+}

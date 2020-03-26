@@ -2,8 +2,11 @@
 @mixin menu_position_taille
 {
   width: 55%;
-  margin-left: 22%;
-  margin-bottom:10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10%;
 }
 
 @mixin entree_plats_desert_position

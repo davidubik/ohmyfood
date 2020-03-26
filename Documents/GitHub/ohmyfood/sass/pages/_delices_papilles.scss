@@ -1,0 +1,55 @@
+
+    /*LE DÉLICE DES PAPILLES*/
+  .delice_papilles
+  {
+    background: #eceeee;
+    @include menu_position_taille;
+    font-family: 'Gaegu';
+    box-shadow: 3px 3px 3px 3px grey;
+    height: 100vh;
+
+    .delice_papilles__head
+    {
+      .section__logo
+      {
+        @include logo_position;
+
+        .logo_papilles
+        {
+          background: -webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    /*Lignes Contour Titre*/
+
+    .border_left_delices
+    {
+
+      .size_border_left_delices
+      {
+        width: 15%;
+        margin-top: -2.5%;
+        margin-left: 4%;
+        position: absolute;
+      }
+    }
+
+    .border_right_delices
+    {
+      .size_border_right_delices
+      {
+        position: absolute;
+        width: 15%;
+        margin-left: 36%;
+        margin-top: -2.5%;
+      }
+    }
+
+    .menu_page
+    {
+      @include entree_plats_desert_position;
+    }
+  }

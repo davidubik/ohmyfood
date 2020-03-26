@@ -1,0 +1,62 @@
+/*LA PALETTE DU GOÛT*/
+
+.palette_gout
+{
+background: #fdfffd;
+@include menu_position_taille;
+font-family: 'Caveat Brush', ;
+@include border_shadow_menu;
+height: 100vh;
+
+  .palette_gout__head
+  {
+    .section__logo
+    {
+      @include logo_position;
+
+      .palette_titre_degrader
+      {
+        background: -webkit-linear-gradient(#409241,#5fab54,#97e266,#b7f982);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .border_palette
+  {
+    .img__border_left_palette
+    {
+      width: 15%;
+      margin-top: -2.5%;
+      margin-left: 8%;
+      position: absolute;
+    }
+    .img__border_right_palette
+    {
+      position: absolute;
+      width: 15%;
+      margin-left: 32%;
+      margin-top: -2.5%;
+    }
+    .img__border_left_palette--plats
+    {
+      width: 15%;
+      margin-top: -2.5%;
+      margin-left: 6%;
+      position: absolute;
+    }
+    .img__border_right_palette--plats
+    {
+      position: absolute;
+      width: 15%;
+      margin-left: 33%;
+      margin-top: -2.5%;
+    }
+  }
+
+  .menu_page
+  {
+    @include entree_plats_desert_position;
+  }
+}
