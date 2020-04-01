@@ -1,4 +1,57 @@
 @charset "UTF-8";
+header {
+  display: flex;
+  justify-content: center;
+  background: #559a86;
+  font-family: "Baloo 2", cursive;
+}
+header .header__logo .logo__ohmyfood {
+  text-align: center;
+  text-align: center;
+  margin-top: 8%;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  font-family: "Baloo 2", cursive;
+}
+footer a .btn_footer {
+  margin-top: 20%;
+}
+footer a .btn_footer:hover {
+  -webkit-animation: wiggle 1s 1;
+  animation: wiggle 1s 1;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(-8deg);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  85% {
+    transform: rotate(-2deg);
+  }
+  93% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0px);
+  }
+}
+
 /*GENERAL*/
 * {
   box-sizing: border-box;
@@ -6,6 +59,13 @@
 
 body {
   margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -86,9 +146,11 @@ a {
   background: #6e4ccc;
   height: 2px;
   transition: right 0.3s ease-out;
+  -webkit-transition: right 0.3s ease-out;
 }
 .titre_chic_deserts:hover:before {
   right: 35%;
+  -webkit-right: 5.6px;
 }
 
 .titre_delice {
@@ -139,281 +201,14 @@ ul li {
   margin: 1% auto;
 }
 
-#container {
-  border: 3px solid chartreuse;
-  height: 125vh;
-  /*INDEX*/
-  /*HEADER*/
-  /*MAIN & MENU CONTAINER*/
-  /*LA Note ENCHANTEE*/
-  /*logo croche-bas-de-page*/
-  /*CHIC À LA FRANÇAISE*/
-  /*LE DÉLICE DES PAPILLES*/
-  /*LA PALETTE DU GOÛT*/
-  /*MENTIONS LEGALES*/
-  /*BOUTON*/
-  /*EFFET TROIS PETITS POINTS*/
-  /*FOOTER*/
-}
-#container header, #container footer {
-  background: #559a86;
-  color: #fcca46;
-  height: 15vh;
+.btn {
   font-family: "Baloo 2", cursive;
 }
-#container h2 {
-  margin-top: 2%;
-  text-align: center;
-}
-#container header {
-  display: flex;
-  justify-content: center;
-  background: #559a86;
-  font-family: "Baloo 2", cursive;
-}
-#container header .header__logo .logo__ohmyfood {
-  text-align: center;
-  text-align: center;
-  margin-top: 8%;
-}
-#container main {
-  border: 2px solid blue;
-  height: 120vh;
-}
-#container main .containerLiens {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: red;
-  overflow: hidden;
-}
-#container main .containerLiens .menu__container {
-  text-align: center;
-  /*IMG ANIMATE*/
-}
-#container main .containerLiens .menu__container .lien__menus {
-  overflow: hidden;
-}
-#container main .containerLiens .menu__container .lien__menus .menu__main {
-  box-shadow: 3px 3px 3px 3px grey;
-  margin: 2%;
-  width: 15%;
-  overflow: hidden;
-}
-#container main .containerLiens .menu__container .lien__menus .menu__main:hover {
-  transform: scale(1.4);
-  transition: transform 1000ms;
-}
-#container .note_enchantee {
-  background: #fcdfdb;
-  width: 55%;
-  margin-left: 22%;
-  margin-bottom: 10%;
-  font-family: "Satisfy";
-  box-shadow: 3px 3px 3px 3px grey;
-  /*logo croche haut-de-page*/
-}
-#container .note_enchantee .border_texte .border_texte__left .note_border__svg {
-  width: 15%;
-  margin-top: -2.5%;
-  margin-left: 8%;
-  position: absolute;
-}
-#container .note_enchantee .border_texte .border_texte__right .note_border__svg {
-  position: absolute;
-  width: 15%;
-  margin-left: 32%;
-  margin-top: -2.5%;
-}
-#container .note_enchantee .border_texte .border_texte__left--plats {
-  width: 15%;
-  margin-top: -3.5%;
-  margin-left: 7%;
-  position: absolute;
-}
-#container .note_enchantee .border_texte .border_texte__right--plats {
-  position: absolute;
-  width: 15%;
-  margin-left: 33%;
-  margin-top: -3.5%;
-}
-#container .note_enchantee .border_texte .border_texte__left--deserts {
-  width: 15%;
-  margin-top: -3.5%;
-  margin-left: 6%;
-  position: absolute;
-}
-#container .note_enchantee .border_texte .border_texte__right--deserts {
-  position: absolute;
-  width: 15%;
-  margin-left: 34%;
-  margin-top: -3.5%;
-}
-#container .note_enchantee .section__logo {
-  text-align: center;
-  margin-top: 8%;
-}
-#container .note_enchantee .section__logo .fa-music {
-  font-size: 4em;
-  margin-top: 2%;
-  -o-background-clip: text;
-  -o-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
-}
-#container .note_enchantee .menu_page {
-  display: flex;
-  margin-left: 15%;
-}
-#container .section__logo__bottom {
-  text-align: center;
-  margin-top: 8%;
-}
-#container .section__logo__bottom .fa-music--bottom {
-  font-size: 2em;
-  margin-bottom: 5%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
-}
-#container .chic_francaise {
-  background: #fff5fe;
-  width: 55%;
-  margin-left: 22%;
-  margin-bottom: 10%;
-  box-shadow: 3px 3px 3px 3px grey;
-}
-#container .chic_francaise .chic_francaise__head .section__logo {
-  text-align: center;
-  margin-top: 8%;
-}
-#container .chic_francaise .chic_francaise__head .section__logo .chic_titre_degrader {
-  background: -webkit-linear-gradient(#e38913, #b57094, #aa6ab2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#container .chic_francaise .border_left_chic {
-  width: 16%;
-  margin-left: 2%;
-  margin-top: -3%;
-  position: absolute;
-}
-#container .chic_francaise .border_right_chic {
-  position: absolute;
-  width: 15%;
-  margin-left: 36%;
-  margin-top: -3%;
-}
-#container .chic_francaise .menu_page {
-  display: flex;
-  margin-left: 15%;
-}
-#container .chic_francaise .entree--color {
-  color: #c67412;
-}
-#container .chic_francaise .plats--color {
-  color: #a56799;
-}
-#container .chic_francaise .deserts--color {
-  color: #6e4ccc;
-}
-#container .delice_papilles {
-  background: #eceeee;
-  width: 55%;
-  margin-left: 22%;
-  margin-bottom: 10%;
-  font-family: "Gaegu";
-  box-shadow: 3px 3px 3px 3px grey;
-  /*Lignes Contour Titre*/
-}
-#container .delice_papilles .delice_papilles__head .section__logo {
-  text-align: center;
-  margin-top: 8%;
-}
-#container .delice_papilles .delice_papilles__head .section__logo .logo_papilles {
-  background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#container .delice_papilles .border_left_delices .size_border_left_delices {
-  width: 15%;
-  margin-top: -2.5%;
-  margin-left: 4%;
-  position: absolute;
-}
-#container .delice_papilles .border_right_delices .size_border_right_delices {
-  position: absolute;
-  width: 15%;
-  margin-left: 36%;
-  margin-top: -2.5%;
-}
-#container .delice_papilles .menu_page {
-  display: flex;
-  margin-left: 15%;
-}
-#container .palette_gout {
-  background: #fdfffd;
-  width: 55%;
-  margin-left: 22%;
-  margin-bottom: 10%;
-  font-family: "Caveat Brush";
-  box-shadow: 3px 3px 3px 3px grey;
-}
-#container .palette_gout .palette_gout__head .section__logo {
-  text-align: center;
-  margin-top: 8%;
-}
-#container .palette_gout .palette_gout__head .section__logo .palette_titre_degrader {
-  background: -webkit-linear-gradient(#409241, #5fab54, #97e266, #b7f982);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#container .palette_gout .border_palette .img__border_left_palette {
-  width: 15%;
-  margin-top: -2.5%;
-  margin-left: 8%;
-  position: absolute;
-}
-#container .palette_gout .border_palette .img__border_right_palette {
-  position: absolute;
-  width: 15%;
-  margin-left: 32%;
-  margin-top: -2.5%;
-}
-#container .palette_gout .border_palette .img__border_left_palette--plats {
-  width: 15%;
-  margin-top: -2.5%;
-  margin-left: 6%;
-  position: absolute;
-}
-#container .palette_gout .border_palette .img__border_right_palette--plats {
-  position: absolute;
-  width: 15%;
-  margin-left: 33%;
-  margin-top: -2.5%;
-}
-#container .palette_gout .menu_page {
-  display: flex;
-  margin-left: 15%;
-}
-#container main section .mentions {
-  text-align: justify;
-  margin: 35px 35px auto;
-  width: 50%;
-  margin-bottom: 10%;
-  margin-left: 25%;
-}
-#container .btn {
-  font-family: "Baloo 2", cursive;
-}
-#container .btn a {
+.btn a {
   display: flex;
   justify-content: center;
 }
-#container .btn a .button {
+.btn a .button {
   position: absolute;
   margin-top: 2.5%;
   background: #559a86;
@@ -424,7 +219,8 @@ ul li {
   width: 20%;
   text-align: center;
 }
-#container .trois_petits_points {
+
+.trois_petits_points {
   animation-name: trois_petits_points_effet;
   animation-iteration-count: infinite;
   animation-duration: 0.7s;
@@ -432,6 +228,7 @@ ul li {
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
+
 @keyframes trois_petits_points_effet {
   0% {
     opacity: 0.1;
@@ -446,42 +243,280 @@ ul li {
     background-size: contain;
   }
 }
-#container footer {
+/*LA Note ENCHANTEE*/
+.note_enchantee {
+  background: #fcdfdb;
+  width: 55%;
   display: flex;
-  justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 10vh;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  font-family: "Satisfy";
+  box-shadow: 2px 2px 2px 2px grey;
+  /*logo croche haut-de-page*/
+}
+.note_enchantee .border_texte .border_texte__left .note_border__svg {
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+.note_enchantee .border_texte .border_texte__right .note_border__svg {
+  position: absolute;
+  width: 15%;
+  margin-left: 32%;
+  margin-top: -2.5%;
+}
+.note_enchantee .border_texte .border_texte__left--plats {
+  width: 15%;
+  margin-top: -3.5%;
+  margin-left: 7%;
+  position: absolute;
+}
+.note_enchantee .border_texte .border_texte__right--plats {
+  position: absolute;
+  width: 15%;
+  margin-left: 33%;
+  margin-top: -3.5%;
+}
+.note_enchantee .border_texte .border_texte__left--deserts {
+  width: 15%;
+  margin-top: -3.5%;
+  margin-left: 6%;
+  position: absolute;
+}
+.note_enchantee .border_texte .border_texte__right--deserts {
+  position: absolute;
+  width: 15%;
+  margin-left: 34%;
+  margin-top: -3.5%;
+}
+.note_enchantee .section__logo {
+  text-align: center;
+  margin-top: 8%;
+}
+.note_enchantee .section__logo .fa-music {
+  font-size: 4em;
+  margin-top: 2%;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
+}
+.note_enchantee .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+
+/*logo croche-bas-de-page*/
+.section__logo__bottom {
+  text-align: center;
+  margin-top: 8%;
+}
+.section__logo__bottom .fa-music--bottom {
+  font-size: 2em;
+  margin-bottom: 5%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
+}
+
+/*CHIC À LA FRANÇAISE*/
+.chic_francaise {
+  background: #fff5fe;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  box-shadow: 2px 2px 2px 2px grey;
+  height: 100vh;
+}
+.chic_francaise .chic_francaise__head .section__logo {
+  text-align: center;
+  margin-top: 8%;
+}
+.chic_francaise .chic_francaise__head .section__logo .chic_titre_degrader {
+  background: -webkit-linear-gradient(#e38913, #b57094, #aa6ab2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.chic_francaise .border_left_chic {
+  width: 16%;
+  margin-left: 2%;
+  margin-top: -3%;
+  position: absolute;
+}
+.chic_francaise .border_right_chic {
+  position: absolute;
+  width: 15%;
+  margin-left: 36%;
+  margin-top: -3%;
+}
+.chic_francaise .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+.chic_francaise .entree--color {
+  color: #c67412;
+}
+.chic_francaise .plats--color {
+  color: #a56799;
+}
+.chic_francaise .deserts--color {
+  color: #6e4ccc;
+}
+
+/*LE DÉLICE DES PAPILLES*/
+.delice_papilles {
+  background: #eceeee;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  font-family: "Gaegu";
+  box-shadow: 3px 3px 3px 3px grey;
+  height: 100vh;
+  /*Lignes Contour Titre*/
+}
+.delice_papilles .delice_papilles__head .section__logo {
+  text-align: center;
+  margin-top: 8%;
+}
+.delice_papilles .delice_papilles__head .section__logo .logo_papilles {
+  background: -webkit-linear-gradient(#0228dd, #6b6beb, #dbeaf4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delice_papilles .border_left_delices .size_border_left_delices {
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 4%;
+  position: absolute;
+}
+.delice_papilles .border_right_delices .size_border_right_delices {
+  position: absolute;
+  width: 15%;
+  margin-left: 36%;
+  margin-top: -2.5%;
+}
+.delice_papilles .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+
+/*LA PALETTE DU GOÛT*/
+.palette_gout {
+  background: #fdfffd;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  font-family: "Caveat Brush";
+  box-shadow: 2px 2px 2px 2px grey;
+  height: 100vh;
+}
+.palette_gout .palette_gout__head .section__logo {
+  text-align: center;
+  margin-top: 8%;
+}
+.palette_gout .palette_gout__head .section__logo .palette_titre_degrader {
+  background: -webkit-linear-gradient(#409241, #5fab54, #97e266, #b7f982);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.palette_gout .border_palette .img__border_left_palette {
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 8%;
+  position: absolute;
+}
+.palette_gout .border_palette .img__border_right_palette {
+  position: absolute;
+  width: 15%;
+  margin-left: 32%;
+  margin-top: -2.5%;
+}
+.palette_gout .border_palette .img__border_left_palette--plats {
+  width: 15%;
+  margin-top: -2.5%;
+  margin-left: 6%;
+  position: absolute;
+}
+.palette_gout .border_palette .img__border_right_palette--plats {
+  position: absolute;
+  width: 15%;
+  margin-left: 33%;
+  margin-top: -2.5%;
+}
+.palette_gout .menu_page {
+  display: flex;
+  margin-left: 15%;
+}
+
+/*MENTIONS LEGALES*/
+main section .mentions {
+  text-align: justify;
+  margin: 35px 35px auto;
+  width: 50%;
+  margin-bottom: 10%;
+}
+
+/*GENERAL*/
+#container {
+  border: 3px solid chartreuse;
+  height: 125vh;
+  /*INDEX*/
+  /*HEADER*/
+  /*MAIN & MENU CONTAINER*/
+  /*LA Note ENCHANTEE*/
+  /*CHIC À LA FRANÇAISE*/
+  /*BOUTON*/
+  /*EFFET TROIS PETITS POINTS*/
+}
+#container header, #container footer {
+  background: #559a86;
+  color: #fcca46;
   font-family: "Baloo 2", cursive;
 }
-#container footer a .btn_footer {
-  margin-top: 20%;
+#container h2 {
+  margin-top: 2%;
+  text-align: center;
 }
-#container footer a .btn_footer:hover {
-  -webkit-animation: wiggle 1s 1;
-  animation: wiggle 1s 1;
+#container main {
+  border: 2px solid blue;
+  height: 120vh;
 }
-@keyframes wiggle {
-  0% {
-    transform: rotate(-8deg);
-  }
-  25% {
-    transform: rotate(8deg);
-  }
-  50% {
-    transform: rotate(-4deg);
-  }
-  75% {
-    transform: rotate(4deg);
-  }
-  85% {
-    transform: rotate(-2deg);
-  }
-  93% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0px);
-  }
+#container main .containerLiens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 2%;
+}
+#container main .containerLiens .menu__container {
+  text-align: center;
+  /*IMG ANIMATE*/
+}
+#container main .containerLiens .menu__container .lien__menus {
+  overflow: hidden;
+}
+#container main .containerLiens .menu__container .lien__menus .menu__main {
+  box-shadow: 2px 2px 2px 2px grey;
+  margin: 2%;
+  width: 15%;
+  overflow: hidden;
+}
+#container main .containerLiens .menu__container .lien__menus .menu__main:hover {
+  transform: scale(1.4);
+  transition: transform 1000ms;
 }

@@ -135,10 +135,12 @@
      background:#6e4ccc;
      height:2px;
      transition:right 0.3s ease-out;
+     -webkit-transition:right 0.3s ease-out;
   }
   &:hover:before
   {
     right:35%;
+    -webkit-right:5.6px;
   }
 }
 
@@ -228,5 +230,5 @@ animation: wiggle 1s 1;
 
 @mixin border_shadow_menu
 {
-  box-shadow: 3px 3px 3px 3px grey;
+  box-shadow: 2px 2px 2px 2px grey;
 }
