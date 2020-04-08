@@ -43,26 +43,26 @@
       {
         border: 2px solid blue;
         height: 120vh;
-        .containerLiens
+
+        .menu__container
         {
           display: flex;
           justify-content: center;
-          flex-wrap: wrap;
-          overflow: hidden;
           margin-top: 2%;
-          .menu__container
+          text-align: center;
+          overflow: hidden;
+          .containerLien
          {
-
-           text-align: center;
-           /*IMG ANIMATE*/
-            .lien__menus
+           overflow: hidden;
+           .lien__menus
             {
               overflow: hidden;
               .menu__main
               {
+                width: 100%;
+                flex-wrap: wrap;
                 @include border_shadow_menu;
                 margin: 2%;
-                width: 15%;
                 overflow: hidden;
                 &:hover
                 {

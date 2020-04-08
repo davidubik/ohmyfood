@@ -496,27 +496,27 @@ main section .mentions {
   border: 2px solid blue;
   height: 120vh;
 }
-#container main .containerLiens {
+#container main .menu__container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
   margin-top: 2%;
-}
-#container main .containerLiens .menu__container {
   text-align: center;
-  /*IMG ANIMATE*/
-}
-#container main .containerLiens .menu__container .lien__menus {
   overflow: hidden;
 }
-#container main .containerLiens .menu__container .lien__menus .menu__main {
+#container main .menu__container .containerLien {
+  overflow: hidden;
+}
+#container main .menu__container .containerLien .lien__menus {
+  overflow: hidden;
+}
+#container main .menu__container .containerLien .lien__menus .menu__main {
+  width: 100%;
+  flex-wrap: wrap;
   box-shadow: 2px 2px 2px 2px grey;
   margin: 2%;
-  width: 15%;
   overflow: hidden;
 }
-#container main .containerLiens .menu__container .lien__menus .menu__main:hover {
+#container main .menu__container .containerLien .lien__menus .menu__main:hover {
   transform: scale(1.4);
   transition: transform 1000ms;
 }
