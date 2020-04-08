@@ -498,25 +498,22 @@ main section .mentions {
 }
 #container main .menu__container {
   display: flex;
-  justify-content: center;
-  margin-top: 2%;
+  justify-content: space-evenly;
+  /*flex-wrap: wrap;*/
+}
+#container main .menu__container .containerLien {
   text-align: center;
   overflow: hidden;
 }
-#container main .menu__container .containerLien {
-  overflow: hidden;
-}
-#container main .menu__container .containerLien .lien__menus {
-  overflow: hidden;
-}
 #container main .menu__container .containerLien .lien__menus .menu__main {
-  width: 100%;
-  flex-wrap: wrap;
+  width: 45%;
   box-shadow: 2px 2px 2px 2px grey;
   margin: 2%;
-  overflow: hidden;
+  /*#container main .menu__container .lien__menus .menu__main:hover {
+    transform: scale(1.4);
+  }*/
 }
 #container main .menu__container .containerLien .lien__menus .menu__main:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: transform 1000ms;
 }

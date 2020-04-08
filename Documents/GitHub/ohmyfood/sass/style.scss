@@ -36,8 +36,6 @@
       /*HEADER*/
 
 
-
-
       /*MAIN & MENU CONTAINER*/
       main
       {
@@ -47,28 +45,28 @@
         .menu__container
         {
           display: flex;
-          justify-content: center;
-          margin-top: 2%;
-          text-align: center;
-          overflow: hidden;
+          justify-content: space-evenly;
+          /*flex-wrap: wrap;*/
           .containerLien
          {
-           overflow: hidden;
+          text-align: center;
+          overflow: hidden;
            .lien__menus
             {
-              overflow: hidden;
+
               .menu__main
               {
-                width: 100%;
-                flex-wrap: wrap;
+                width: 45%;
                 @include border_shadow_menu;
-                margin: 2%;
-                overflow: hidden;
-                &:hover
-                {
-                  transform: scale(1.40);
-                  transition: transform 1000ms;
-                }
+                  margin: 2%;
+                    &:hover
+                    {
+                      @include zoom_pour_img;
+                    }
+
+		              /*#container main .menu__container .lien__menus .menu__main:hover {
+		                transform: scale(1.4);
+                }*/
               }
             }
           }
