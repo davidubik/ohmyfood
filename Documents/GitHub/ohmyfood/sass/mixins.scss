@@ -2,15 +2,26 @@
 @mixin menu_position_taille
 {
   width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+    flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+    justify-content: center;
   margin-bottom: 10%;
 }
 
 @mixin entree_plats_desert_position
 {
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 15%;
 }
@@ -199,31 +210,46 @@ animation: wiggle 1s 1;
 
 @keyframes wiggle{
 0% {
+
+  -webkit-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
   transform: rotate(-8deg);
 }
 
 25% {
-  transform: rotate(8deg);
+-webkit-transform: rotate(8deg);
+-ms-transform: rotate(8deg);
+transform: rotate(8deg);
 }
 
 50% {
-  transform: rotate(-4deg);
+-webkit-transform: rotate(-4deg);
+-ms-transform: rotate(-4deg);
+transform: rotate(-4deg);
 }
 
 75% {
+  -webkit-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
   transform: rotate(4deg);
 }
 
 85% {
-  transform: rotate(-2deg);
+-webkit-transform: rotate(-2deg);
+-ms-transform: rotate(-2deg);
+transform: rotate(-2deg);
 }
 
 93% {
-  transform: rotate(1deg);
+-webkit-transform: rotate(1deg);
+-ms-transform: rotate(1deg);
+transform: rotate(1deg);
 }
 
 100% {
-  transform: rotate(0px);
+-webkit-transform: rotate(0px);
+-ms-transform: rotate(0px);
+transform: rotate(0px);
     }
   }
 }
