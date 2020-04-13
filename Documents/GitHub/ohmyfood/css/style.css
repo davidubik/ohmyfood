@@ -462,6 +462,12 @@ ul li {
   height: 100vh;
   /*Lignes Contour Titre*/
 }
+@media screen and (max-width: 768px) {
+  .delice_papilles {
+    background: beige;
+    width: 85%;
+  }
+}
 .delice_papilles .delice_papilles__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -477,11 +483,27 @@ ul li {
   margin-left: 4%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .delice_papilles .border_left_delices .size_border_left_delices {
+    width: 15%;
+    margin-top: -4%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
 .delice_papilles .border_right_delices .size_border_right_delices {
   position: absolute;
   width: 15%;
   margin-left: 36%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 768px) {
+  .delice_papilles .border_right_delices .size_border_right_delices {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -4%;
+  }
 }
 .delice_papilles .menu_page {
   display: flex;
@@ -501,6 +523,12 @@ ul li {
   box-shadow: 2px 2px 2px 2px grey;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .palette_gout {
+    background: beige;
+    width: 85%;
+  }
+}
 .palette_gout .palette_gout__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -516,11 +544,27 @@ ul li {
   margin-left: 8%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .palette_gout .border_palette .img__border_left_palette {
+    width: 15%;
+    margin-top: -4%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
 .palette_gout .border_palette .img__border_right_palette {
   position: absolute;
   width: 15%;
   margin-left: 32%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 768px) {
+  .palette_gout .border_palette .img__border_right_palette {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -4%;
+  }
 }
 .palette_gout .border_palette .img__border_left_palette--plats {
   width: 15%;
@@ -528,11 +572,27 @@ ul li {
   margin-left: 6%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .palette_gout .border_palette .img__border_left_palette--plats {
+    width: 15%;
+    margin-top: -4%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
 .palette_gout .border_palette .img__border_right_palette--plats {
   position: absolute;
   width: 15%;
   margin-left: 33%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 768px) {
+  .palette_gout .border_palette .img__border_right_palette--plats {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -4%;
+  }
 }
 .palette_gout .menu_page {
   display: flex;

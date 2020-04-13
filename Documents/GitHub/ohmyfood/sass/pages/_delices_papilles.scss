@@ -7,6 +7,7 @@
     font-family: 'Gaegu';
     box-shadow: 3px 3px 3px 3px grey;
     height: 100vh;
+    @include tablets-pages;
 
     .delice_papilles__head
     {
@@ -34,6 +35,7 @@
         margin-top: -2.5%;
         margin-left: 4%;
         position: absolute;
+        @include tablets_border_left_delices;
       }
     }
 
@@ -45,6 +47,7 @@
         width: 15%;
         margin-left: 36%;
         margin-top: -2.5%;
+        @include tablets_border_right_delices;
       }
     }
 

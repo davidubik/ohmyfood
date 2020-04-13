@@ -1,5 +1,4 @@
-//Map
-
+//MAP
 $breakpoints :
 (
   mobil : 576px,
@@ -106,4 +105,28 @@ $breakpoints :
       margin-left: 56%;
       margin-top: -4%;
     }
+}
+
+// LE DÉLICES DES PAPILLES
+
+@mixin tablets_border_left_delices
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    width: 15%;
+    margin-top: -4%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
+
+@mixin tablets_border_right_delices
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -4%;
+  }
 }

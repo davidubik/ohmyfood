@@ -7,6 +7,7 @@ background: #fdfffd;
 font-family: 'Caveat Brush', ;
 @include border_shadow_menu;
 height: 100vh;
+@include tablets-pages;
 
   .palette_gout__head
   {
@@ -31,6 +32,7 @@ height: 100vh;
       margin-top: -2.5%;
       margin-left: 8%;
       position: absolute;
+        @include tablets_border_left_delices;
     }
     .img__border_right_palette
     {
@@ -38,6 +40,7 @@ height: 100vh;
       width: 15%;
       margin-left: 32%;
       margin-top: -2.5%;
+      @include tablets_border_right_delices;
     }
     .img__border_left_palette--plats
     {
@@ -45,6 +48,7 @@ height: 100vh;
       margin-top: -2.5%;
       margin-left: 6%;
       position: absolute;
+      @include tablets_border_left_delices;
     }
     .img__border_right_palette--plats
     {
@@ -52,6 +56,7 @@ height: 100vh;
       width: 15%;
       margin-left: 33%;
       margin-top: -2.5%;
+      @include tablets_border_right_delices;
     }
   }
 
