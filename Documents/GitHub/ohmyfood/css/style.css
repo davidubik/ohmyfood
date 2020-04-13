@@ -258,7 +258,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .note_enchantee {
-    background: red;
+    background: beige;
     width: 85%;
   }
 }
@@ -391,6 +391,12 @@ ul li {
   box-shadow: 2px 2px 2px 2px grey;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .chic_francaise {
+    background: beige;
+    width: 85%;
+  }
+}
 .chic_francaise .chic_francaise__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -406,11 +412,27 @@ ul li {
   margin-top: -3%;
   position: absolute;
 }
+@media screen and (max-width: 768px) {
+  .chic_francaise .border_left_chic {
+    width: 16%;
+    margin-left: 12%;
+    margin-top: -4%;
+    position: absolute;
+  }
+}
 .chic_francaise .border_right_chic {
   position: absolute;
   width: 15%;
   margin-left: 36%;
   margin-top: -3%;
+}
+@media screen and (max-width: 768px) {
+  .chic_francaise .border_right_chic {
+    position: absolute;
+    width: 15%;
+    margin-left: 56%;
+    margin-top: -4%;
+  }
 }
 .chic_francaise .menu_page {
   display: flex;

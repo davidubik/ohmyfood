@@ -12,12 +12,12 @@ $breakpoints :
 {
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
-    background: red;
+    background: beige;
     width: 85%;
 
   }
 }
-
+//LA nOte Enchantée
 @mixin tablets-border-pages-left
 {
   @media screen and (max-width: map-get($breakpoints, tablets))
@@ -82,4 +82,28 @@ $breakpoints :
     margin-left: 50%;
     margin-top: -6%;
   }
+}
+
+// CHIC À LA FRANÇAISE
+
+@mixin tablets_border_left_chic
+{
+    @media screen and (max-width: map-get($breakpoints, tablets))
+    {
+      width: 16%;
+      margin-left: 12%;
+      margin-top: -4%;
+      position: absolute;
+    }
+}
+
+@mixin tablets_border_right_chic
+{
+    @media screen and (max-width: map-get($breakpoints, tablets))
+    {
+      position: absolute;
+      width: 15%;
+      margin-left: 56%;
+      margin-top: -4%;
+    }
 }
