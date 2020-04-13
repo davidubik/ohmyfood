@@ -8,6 +8,7 @@
   @include border_shadow_menu;
   height: 100vh;
   @include tablets-pages;
+  @include mobil-pages;
 
   .chic_francaise__head
   {
@@ -29,12 +30,14 @@
     {
       @include border_left_chic;
       @include tablets_border_left_chic;
+      @include mobil_border_left_chic;
     }
 
     .border_right_chic
     {
       @include border_right_chic;
       @include tablets_border_right_chic;
+      @include mobil_border_right_chic;
 
     }
 

@@ -262,6 +262,12 @@ ul li {
     width: 85%;
   }
 }
+@media screen and (max-width: 576px) {
+  .note_enchantee {
+    background: orange;
+    width: 100%;
+  }
+}
 .note_enchantee .border_texte .border_texte__left .note_border__svg {
   width: 15%;
   margin-top: -2.5%;
@@ -273,6 +279,14 @@ ul li {
     width: 15%;
     margin-top: -4.5%;
     margin-left: 23%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__left .note_border__svg {
+    width: 15%;
+    margin-top: -6%;
+    margin-left: 27%;
     position: absolute;
   }
 }
@@ -290,6 +304,14 @@ ul li {
     margin-top: -4.5%;
   }
 }
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__right .note_border__svg {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -6%;
+  }
+}
 .note_enchantee .border_texte .border_texte__left--plats {
   width: 15%;
   margin-top: -3.5%;
@@ -301,6 +323,22 @@ ul li {
     width: 15%;
     margin-top: -6%;
     margin-left: 20%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 768px) {
+  .note_enchantee .border_texte .border_texte__left--plats {
+    width: 15%;
+    margin-top: -4.5%;
+    margin-left: 23%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__left--plats {
+    width: 15%;
+    margin-top: -8%;
+    margin-left: 23%;
     position: absolute;
   }
 }
@@ -318,6 +356,14 @@ ul li {
     margin-top: -6%;
   }
 }
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__right--plats {
+    position: absolute;
+    width: 15%;
+    margin-left: 59%;
+    margin-top: -8%;
+  }
+}
 .note_enchantee .border_texte .border_texte__left--deserts {
   width: 15%;
   margin-top: -3.5%;
@@ -329,6 +375,14 @@ ul li {
     width: 15%;
     margin-top: -6%;
     margin-left: 18%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__left--deserts {
+    width: 15%;
+    margin-top: -8%;
+    margin-left: 21%;
     position: absolute;
   }
 }
@@ -344,6 +398,14 @@ ul li {
     width: 15%;
     margin-left: 50%;
     margin-top: -6%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .note_enchantee .border_texte .border_texte__right--deserts {
+    position: absolute;
+    width: 15%;
+    margin-left: 61%;
+    margin-top: -8%;
   }
 }
 .note_enchantee .section__logo {
@@ -397,6 +459,12 @@ ul li {
     width: 85%;
   }
 }
+@media screen and (max-width: 576px) {
+  .chic_francaise {
+    background: orange;
+    width: 100%;
+  }
+}
 .chic_francaise .chic_francaise__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -420,6 +488,14 @@ ul li {
     position: absolute;
   }
 }
+@media screen and (max-width: 576px) {
+  .chic_francaise .border_left_chic {
+    width: 16%;
+    margin-left: 13%;
+    margin-top: -6%;
+    position: absolute;
+  }
+}
 .chic_francaise .border_right_chic {
   position: absolute;
   width: 15%;
@@ -432,6 +508,14 @@ ul li {
     width: 15%;
     margin-left: 56%;
     margin-top: -4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .chic_francaise .border_right_chic {
+    position: absolute;
+    width: 15%;
+    margin-left: 68%;
+    margin-top: -6%;
   }
 }
 .chic_francaise .menu_page {
@@ -468,6 +552,12 @@ ul li {
     width: 85%;
   }
 }
+@media screen and (max-width: 576px) {
+  .delice_papilles {
+    background: orange;
+    width: 100%;
+  }
+}
 .delice_papilles .delice_papilles__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -491,6 +581,14 @@ ul li {
     position: absolute;
   }
 }
+@media screen and (max-width: 576px) {
+  .delice_papilles .border_left_delices .size_border_left_delices {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 18%;
+    position: absolute;
+  }
+}
 .delice_papilles .border_right_delices .size_border_right_delices {
   position: absolute;
   width: 15%;
@@ -503,6 +601,14 @@ ul li {
     width: 15%;
     margin-left: 55%;
     margin-top: -4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delice_papilles .border_right_delices .size_border_right_delices {
+    position: absolute;
+    width: 15%;
+    margin-left: 66%;
+    margin-top: -5%;
   }
 }
 .delice_papilles .menu_page {
@@ -529,6 +635,12 @@ ul li {
     width: 85%;
   }
 }
+@media screen and (max-width: 576px) {
+  .palette_gout {
+    background: orange;
+    width: 100%;
+  }
+}
 .palette_gout .palette_gout__head .section__logo {
   text-align: center;
   margin-top: 8%;
@@ -552,6 +664,14 @@ ul li {
     position: absolute;
   }
 }
+@media screen and (max-width: 576px) {
+  .palette_gout .border_palette .img__border_left_palette {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 18%;
+    position: absolute;
+  }
+}
 .palette_gout .border_palette .img__border_right_palette {
   position: absolute;
   width: 15%;
@@ -564,6 +684,14 @@ ul li {
     width: 15%;
     margin-left: 55%;
     margin-top: -4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .palette_gout .border_palette .img__border_right_palette {
+    position: absolute;
+    width: 15%;
+    margin-left: 66%;
+    margin-top: -5%;
   }
 }
 .palette_gout .border_palette .img__border_left_palette--plats {
@@ -580,6 +708,14 @@ ul li {
     position: absolute;
   }
 }
+@media screen and (max-width: 576px) {
+  .palette_gout .border_palette .img__border_left_palette--plats {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 18%;
+    position: absolute;
+  }
+}
 .palette_gout .border_palette .img__border_right_palette--plats {
   position: absolute;
   width: 15%;
@@ -592,6 +728,14 @@ ul li {
     width: 15%;
     margin-left: 55%;
     margin-top: -4%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .palette_gout .border_palette .img__border_right_palette--plats {
+    position: absolute;
+    width: 15%;
+    margin-left: 66%;
+    margin-top: -5%;
   }
 }
 .palette_gout .menu_page {

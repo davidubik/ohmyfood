@@ -8,6 +8,7 @@
     box-shadow: 3px 3px 3px 3px grey;
     height: 100vh;
     @include tablets-pages;
+    @include mobil-pages;
 
     .delice_papilles__head
     {
@@ -36,6 +37,7 @@
         margin-left: 4%;
         position: absolute;
         @include tablets_border_left_delices;
+        @include mobil_border_left_delices;
       }
     }
 
@@ -48,6 +50,7 @@
         margin-left: 36%;
         margin-top: -2.5%;
         @include tablets_border_right_delices;
+        @include mobil_border_right_delices;
       }
     }
 

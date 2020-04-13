@@ -7,6 +7,8 @@ $breakpoints :
 );
 
 
+ //TABLETS
+
 @mixin tablets-pages
 {
   @media screen and (max-width: map-get($breakpoints, tablets))
@@ -128,5 +130,134 @@ $breakpoints :
     width: 15%;
     margin-left: 55%;
     margin-top: -4%;
+  }
+}
+
+// La palette du gout à les mêmes mixins que le délice des papilles
+
+//MOBIL
+
+@mixin mobil-pages
+{
+    @media screen and (max-width: map-get($breakpoints, mobil))
+    {
+      background: orange;
+      width: 100%;
+    }
+}
+
+// La note ENHCANTÉE
+
+@mixin mobil-border-pages-left
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    width: 15%;
+    margin-top: -6%;
+    margin-left: 27%;
+    position: absolute;
+  }
+}
+
+@mixin mobil-border-pages-right
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 55%;
+    margin-top: -6%;
+  }
+}
+
+@mixin mobil-border-page-left-plats
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    width: 15%;
+    margin-top: -8%;
+    margin-left: 23%;
+    position: absolute;
+  }
+}
+
+@mixin mobil-border-page-right-plats
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 59%;
+    margin-top: -8%;
+  }
+}
+
+@mixin mobil-border-pages-left-deserts
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    width: 15%;
+    margin-top: -8%;
+    margin-left: 21%;
+    position: absolute;
+  }
+}
+
+@mixin mobil-border-page-right-deserts
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 61%;
+    margin-top: -8%;
+  }
+}
+
+//Le chic à la française
+
+@mixin mobil_border_left_chic
+{
+    @media screen and (max-width: map-get($breakpoints, mobil))
+    {
+      width: 16%;
+      margin-left: 13%;
+      margin-top: -6%;
+      position: absolute;
+    }
+}
+
+@mixin mobil_border_right_chic
+{
+    @media screen and (max-width: map-get($breakpoints, mobil))
+    {
+      position: absolute;
+      width: 15%;
+      margin-left: 68%;
+      margin-top: -6%;
+    }
+}
+
+//Le délice des papilles
+
+@mixin mobil_border_left_delices
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 18%;
+    position: absolute;
+  }
+}
+
+@mixin mobil_border_right_delices
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 66%;
+    margin-top: -5%;
   }
 }
