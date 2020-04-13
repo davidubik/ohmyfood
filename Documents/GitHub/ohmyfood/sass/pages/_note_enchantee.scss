@@ -6,6 +6,7 @@ background: #fcdfdb;
 @include menu_position_taille;
 font-family: 'Satisfy';
 @include border_shadow_menu;
+@include tablets-pages;
 
 
 .border_texte
@@ -16,6 +17,7 @@ font-family: 'Satisfy';
    .note_border__svg
    {
      @include note_svg_size_position_left;
+     @include tablets-border-pages-left;
    }
  }
  .border_texte__right
@@ -23,6 +25,7 @@ font-family: 'Satisfy';
    .note_border__svg
    {
      @include note_svg_size_position_right;
+     @include tablets-border-pages-right;
    }
  }
 
@@ -32,6 +35,7 @@ font-family: 'Satisfy';
    margin-top: -3.5%;
    margin-left: 7%;
    position: absolute;
+   @include tablets-border-page-left-plats;
  }
 
  .border_texte__right--plats
@@ -40,6 +44,8 @@ font-family: 'Satisfy';
    width: 15%;
    margin-left: 33%;
    margin-top: -3.5%;
+   @include tablets-border-page-right-plats;
+
  }
 
  .border_texte__left--deserts
@@ -48,6 +54,8 @@ font-family: 'Satisfy';
    margin-top: -3.5%;
    margin-left: 6%;
    position: absolute;
+  @include tablets-border-pages-left-deserts;
+
  }
  .border_texte__right--deserts
  {
@@ -55,6 +63,7 @@ font-family: 'Satisfy';
    width: 15%;
    margin-left: 34%;
    margin-top: -3.5%;
+   @include tablets-border-page-right-deserts;
  }
 }
 

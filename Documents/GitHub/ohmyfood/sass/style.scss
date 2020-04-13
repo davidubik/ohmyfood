@@ -1,6 +1,8 @@
 
 @import "variables.scss";
 @import "mixins.scss";
+@import "maps.scss";
+@import"responsive.scss";
 @import "layouts/_header.scss";
 @import "layouts/_footer.scss";
 @import "bases/_general.scss";
@@ -45,41 +47,35 @@
         .menu__container
         {
           display: flex;
-          justify-content: space-evenly;
-          /*flex-wrap: wrap;*/
+          justify-content: space-between;
           .containerLien
-         {
-          text-align: center;
-          overflow: hidden;
+          {
+            overflow: hidden;
            .lien__menus
             {
-
-              .menu__main
+              overflow: hidden;
+              .menu__img
               {
-                width: 45%;
+                width: 30%;
                 @include border_shadow_menu;
-                  margin: 2%;
-                    &:hover
-                    {
-                      @include zoom_pour_img;
-                    }
 
-		              /*#container main .menu__container .lien__menus .menu__main:hover {
-		                transform: scale(1.4);
-                }*/
+                  cursor: pointer;
+                 -webkit-transition: all 0.4s ease-in-out;
+                 -moz-transition: all 0.4s ease-in-out;
+                 -o-transition: all 0.4s ease-in-out;
+                 transition: all 0.4s ease-in-out;
+                 -webkit-backface-visibility: hidden;
+                 -moz-backface-visibility:  hidden;
+                 -ms-backface-visibility:  hidden;
+                 backface-visibility: hidden;
+                &:hover
+                {
+                -webkit-transform: scale(1.4);
+                transform: scale(1.4);
+                }
               }
             }
           }
         }
       }
-
-     /*LA Note ENCHANTEE*/
-
-
-  /*CHIC À LA FRANÇAISE*/
-
-
-      /*BOUTON*/
-
-        /*EFFET TROIS PETITS POINTS*/
-}
+    }

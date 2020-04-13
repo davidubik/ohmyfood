@@ -1,0 +1,85 @@
+//Map
+
+$breakpoints :
+(
+  mobil : 576px,
+  tablets : 768px,
+  desktop : 992px
+);
+
+
+@mixin tablets-pages
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    background: red;
+    width: 85%;
+
+  }
+}
+
+@mixin tablets-border-pages-left
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    width: 15%;
+    margin-top: -4.5%;
+    margin-left: 23%;
+    position: absolute;
+  }
+}
+
+@mixin tablets-border-pages-right
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 46%;
+    margin-top: -4.5%;
+  }
+}
+
+@mixin tablets-border-page-left-plats
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    width: 15%;
+    margin-top: -6%;
+    margin-left: 20%;
+    position: absolute;
+  }
+}
+
+@mixin tablets-border-page-right-plats
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 49%;
+    margin-top: -6%;
+  }
+}
+
+@mixin tablets-border-pages-left-deserts
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    width: 15%;
+    margin-top: -6%;
+    margin-left: 18%;
+    position: absolute;
+  }
+}
+
+@mixin tablets-border-page-right-deserts
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 50%;
+    margin-top: -6%;
+  }
+}
