@@ -7,6 +7,8 @@
     font-family: 'Gaegu';
     box-shadow: 3px 3px 3px 3px grey;
     height: 100vh;
+    @include large-desktop;
+    @include desktop-pages;
     @include tablets-pages;
     @include mobil-pages;
 

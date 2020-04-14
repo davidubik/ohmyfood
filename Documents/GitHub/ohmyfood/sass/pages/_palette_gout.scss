@@ -7,6 +7,8 @@ background: #fdfffd;
 font-family: 'Caveat Brush', ;
 @include border_shadow_menu;
 height: 100vh;
+@include large-desktop;
+@include desktop-pages;
 @include tablets-pages;
 @include mobil-pages;
 

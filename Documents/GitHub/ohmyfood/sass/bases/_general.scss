@@ -51,6 +51,16 @@ text-decoration: none;
 @include underligne_delice;
 }
 
+.titre_delice_plats
+{
+  @include underligne_delice_plats;
+}
+
+.titre_delice_deserts
+{
+  @include underligne_delice_deserts;
+}
+
 .titre_palette
 {
 @include underligne_palette;

@@ -3,15 +3,18 @@
 .note_enchantee
 {
 background: #fcdfdb;
-@include menu_position_taille;
 font-family: 'Satisfy';
+@include menu_position_taille;
 @include border_shadow_menu;
+@include large-desktop;
+@include desktop-pages;
 @include tablets-pages;
 @include mobil-pages;
 
 
 .border_texte
 {
+
  .border_texte__left
  {
 
@@ -95,10 +98,10 @@ font-family: 'Satisfy';
    }
  }
 
-.menu_page
-{
- @include entree_plats_desert_position;
-}
+  .menu_page
+  {
+   @include entree_plats_desert_position;
+  }
 }
 
 /*logo croche-bas-de-page*/

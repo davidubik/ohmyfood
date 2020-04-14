@@ -3,8 +3,31 @@ $breakpoints :
 (
   mobil : 576px,
   tablets : 768px,
-  desktop : 992px
+  desktop : 992px,
+  large-desktop : 1200px
 );
+
+/*LARGE DESKTOP*/
+
+@mixin large-desktop
+{
+  @media screen and (min-width: map-get($breakpoints, large-desktop))
+  {
+    width: 55%;
+  }
+}
+
+
+/*DESKTOP*/
+
+@mixin desktop-pages
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    background: rgba(139, 226, 229, 0.84);
+    width: 55%;
+  }
+}
 
 
  //TABLETS
@@ -49,6 +72,8 @@ $breakpoints :
     margin-top: -6%;
     margin-left: 20%;
     position: absolute;
+    background: red;
+
   }
 }
 

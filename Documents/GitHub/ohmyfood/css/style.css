@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*LARGE DESKTOP*/
+/*DESKTOP*/
 header {
   display: flex;
   justify-content: center;
@@ -30,24 +32,38 @@ footer a .btn_footer:hover {
 }
 @keyframes wiggle {
   0% {
+    -webkit-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
     transform: rotate(-8deg);
   }
   25% {
+    -webkit-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
     transform: rotate(8deg);
   }
   50% {
+    -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
   }
   75% {
+    -webkit-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
     transform: rotate(4deg);
   }
   85% {
+    -webkit-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
     transform: rotate(-2deg);
   }
   93% {
+    -webkit-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
     transform: rotate(1deg);
   }
   100% {
+    -webkit-transform: rotate(0px);
+    -ms-transform: rotate(0px);
     transform: rotate(0px);
   }
 }
@@ -172,6 +188,44 @@ a {
   right: 35%;
 }
 
+.titre_delice_plats {
+  position: relative;
+  overflow: hidden;
+}
+.titre_delice_plats:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  right: 80%;
+  bottom: 0;
+  background: #0670f3;
+  height: 2px;
+  transition: right 0.3s ease-out;
+}
+.titre_delice_plats:hover:before {
+  right: 35%;
+}
+
+.titre_delice_deserts {
+  position: relative;
+  overflow: hidden;
+}
+.titre_delice_deserts:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  right: 80%;
+  bottom: 0;
+  background: #229df9;
+  height: 2px;
+  transition: right 0.3s ease-out;
+}
+.titre_delice_deserts:hover:before {
+  right: 35%;
+}
+
 .titre_palette {
   text-align: center;
   position: relative;
@@ -246,15 +300,34 @@ ul li {
 /*LA Note ENCHANTEE*/
 .note_enchantee {
   background: #fcdfdb;
+  font-family: "Satisfy";
   width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
-  font-family: "Satisfy";
   box-shadow: 2px 2px 2px 2px grey;
   /*logo croche haut-de-page*/
+}
+@media screen and (min-width: 1200px) {
+  .note_enchantee {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .note_enchantee {
+    background: rgba(139, 226, 229, 0.84);
+    width: 55%;
+  }
 }
 @media screen and (max-width: 768px) {
   .note_enchantee {
@@ -324,6 +397,7 @@ ul li {
     margin-top: -6%;
     margin-left: 20%;
     position: absolute;
+    background: red;
   }
 }
 @media screen and (max-width: 768px) {
@@ -424,8 +498,10 @@ ul li {
   background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
 }
 .note_enchantee .menu_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 
 /*logo croche-bas-de-page*/
@@ -445,13 +521,32 @@ ul li {
 .chic_francaise {
   background: #fff5fe;
   width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   box-shadow: 2px 2px 2px 2px grey;
   height: 100vh;
+}
+@media screen and (min-width: 1200px) {
+  .chic_francaise {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .chic_francaise {
+    background: rgba(139, 226, 229, 0.84);
+    width: 55%;
+  }
 }
 @media screen and (max-width: 768px) {
   .chic_francaise {
@@ -519,8 +614,10 @@ ul li {
   }
 }
 .chic_francaise .menu_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 .chic_francaise .entree--color {
   color: #c67412;
@@ -536,15 +633,34 @@ ul li {
 .delice_papilles {
   background: #eceeee;
   width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   font-family: "Gaegu";
   box-shadow: 3px 3px 3px 3px grey;
   height: 100vh;
   /*Lignes Contour Titre*/
+}
+@media screen and (min-width: 1200px) {
+  .delice_papilles {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .delice_papilles {
+    background: rgba(139, 226, 229, 0.84);
+    width: 55%;
+  }
 }
 @media screen and (max-width: 768px) {
   .delice_papilles {
@@ -612,22 +728,43 @@ ul li {
   }
 }
 .delice_papilles .menu_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 
 /*LA PALETTE DU GOÛT*/
 .palette_gout {
   background: #fdfffd;
   width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   font-family: "Caveat Brush";
   box-shadow: 2px 2px 2px 2px grey;
   height: 100vh;
+}
+@media screen and (min-width: 1200px) {
+  .palette_gout {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .palette_gout {
+    background: rgba(139, 226, 229, 0.84);
+    width: 55%;
+  }
 }
 @media screen and (max-width: 768px) {
   .palette_gout {
@@ -739,8 +876,10 @@ ul li {
   }
 }
 .palette_gout .menu_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 
 /*MENTIONS LEGALES*/

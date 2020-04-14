@@ -23,7 +23,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 15%;
+  justify-content: center;
 }
 
 @mixin logo_position
@@ -99,7 +99,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:#c67412;
+     background:hsla(33, 83%, 42%, 1);
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -121,7 +121,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:#a56799;
+     background:hsla(312, 26%, 53%, 1);
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -143,7 +143,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:#6e4ccc;
+     background:hsla(256, 56%, 55%, 1);
      height:2px;
      transition:right 0.3s ease-out;
      -webkit-transition:right 0.3s ease-out;
@@ -167,7 +167,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:#0228dd;
+     background:hsla(230, 98%, 44%, 1);
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -176,6 +176,54 @@
     right:35%;
   }
 }
+
+@mixin underligne_delice_plats
+{
+  position:relative;
+  overflow:hidden;
+  &:before
+  {
+    content:"";
+    position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:hsla(213, 95%, 49%, 1);
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+
+@mixin underligne_delice_deserts
+{
+  position:relative;
+  overflow:hidden;
+  &:before
+  {
+    content:"";
+    position:absolute;
+     z-index:2;
+     left:35%;
+     right:80%;
+     bottom:0;
+     background:hsla(206, 95%, 55%, 1);
+     height:2px;
+     transition:right 0.3s ease-out;
+  }
+  &:hover:before
+  {
+    right:35%;
+  }
+}
+
+
+
 
 @mixin underligne_palette
 {
@@ -190,7 +238,7 @@
      left:41%;
      right:60%;
      bottom:0;
-     background:#16c34c;
+     background:hsla(139, 80%, 43%, 1);
      height:2px;
      transition:right 0.3s ease-out;
   }
