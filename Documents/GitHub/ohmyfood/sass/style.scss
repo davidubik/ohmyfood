@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "maps.scss";
-@import"responsive.scss";
+@import "responsive.scss";
 @import "layouts/_header.scss";
 @import "layouts/_footer.scss";
 @import "bases/_general.scss";
@@ -50,15 +50,22 @@
           justify-content: space-between;
           .containerLien
           {
+	         overflow: hidden;
+			     box-shadow: 3px 3px 3px 0px grey;
+			     margin:2%;
+		       width:250px;
             overflow: hidden;
            .lien__menus
             {
               overflow: hidden;
+              display: inline;
+              background:red;
+                margin:2%;
               .menu__img
               {
-                width: 30%;
+                  box-shadow: 3px 3px 3px 3px grey;
+                  width:250px;
                 @include border_shadow_menu;
-
                   cursor: pointer;
                  -webkit-transition: all 0.4s ease-in-out;
                  -moz-transition: all 0.4s ease-in-out;
@@ -68,11 +75,12 @@
                  -moz-backface-visibility:  hidden;
                  -ms-backface-visibility:  hidden;
                  backface-visibility: hidden;
-                &:hover
-                {
-                -webkit-transform: scale(1.4);
-                transform: scale(1.4);
-                }
+                  &:hover
+                  {
+                  -webkit-transform: scale(1.4);
+                  transform: scale(1.4);
+                  border:1px solid #000;
+                  }
               }
             }
           }

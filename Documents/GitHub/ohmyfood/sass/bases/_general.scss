@@ -12,10 +12,19 @@ margin: 0;
 
 section
 {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 a
@@ -73,9 +82,9 @@ text-align: center;
 
 ul
 {
-li
-{
-list-style: none;
-margin: 1% auto;
-}
+  li
+  {
+  list-style: none;
+  margin: 1% auto;
+  }
 }

@@ -2,7 +2,11 @@
 /*LARGE DESKTOP*/
 /*DESKTOP*/
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: #559a86;
   font-family: "Baloo 2", cursive;
@@ -15,7 +19,10 @@ header .header__logo .logo__ohmyfood {
 
 /*FOOTER*/
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   position: fixed;
   bottom: 0;
@@ -78,9 +85,18 @@ body {
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -121,7 +137,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #c67412;
+  background: #c47412;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -140,7 +156,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #a56799;
+  background: #a6689a;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -159,7 +175,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #6e4ccc;
+  background: #6e4ccd;
   height: 2px;
   transition: right 0.3s ease-out;
   -webkit-transition: right 0.3s ease-out;
@@ -180,7 +196,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #0228dd;
+  background: #0227de;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -199,7 +215,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #0670f3;
+  background: #0671f4;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -218,7 +234,7 @@ a {
   left: 35%;
   right: 80%;
   bottom: 0;
-  background: #229df9;
+  background: #1f9bf9;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -238,7 +254,7 @@ a {
   left: 41%;
   right: 60%;
   bottom: 0;
-  background: #16c34c;
+  background: #16c54d;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -917,12 +933,20 @@ main section .mentions {
 }
 #container main .menu__container .containerLien {
   overflow: hidden;
+  box-shadow: 3px 3px 3px 0px grey;
+  margin: 2%;
+  width: 250px;
+  overflow: hidden;
 }
 #container main .menu__container .containerLien .lien__menus {
   overflow: hidden;
+  display: inline;
+  background: red;
+  margin: 2%;
 }
 #container main .menu__container .containerLien .lien__menus .menu__img {
-  width: 30%;
+  box-shadow: 3px 3px 3px 3px grey;
+  width: 250px;
   box-shadow: 2px 2px 2px 2px grey;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
@@ -937,4 +961,5 @@ main section .mentions {
 #container main .menu__container .containerLien .lien__menus .menu__img:hover {
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
+  border: 1px solid #000;
 }
