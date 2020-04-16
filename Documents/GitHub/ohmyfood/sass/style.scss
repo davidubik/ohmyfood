@@ -13,7 +13,7 @@
 @import "pages/_palette_gout.scss";
 @import "pages/_mentions.scss";
 
-    /*GENERAL*/
+    /*INDEX*/
 
 
 
@@ -33,12 +33,6 @@
         text-align: center;
       }
 
-      /*INDEX*/
-
-      /*HEADER*/
-
-
-      /*MAIN & MENU CONTAINER*/
       main
       {
         border: 2px solid blue;
@@ -50,7 +44,7 @@
           justify-content: space-between;
           .containerLien
           {
-	         overflow: hidden;
+		         overflow: hidden;
 			     box-shadow: 3px 3px 3px 0px grey;
 			     margin:2%;
 		       width:250px;
@@ -65,19 +59,12 @@
               {
                   box-shadow: 3px 3px 3px 3px grey;
                   width:250px;
-                @include border_shadow_menu;
+                  @include border_shadow_menu;
                   cursor: pointer;
-                 -webkit-transition: all 0.4s ease-in-out;
-                 -moz-transition: all 0.4s ease-in-out;
-                 -o-transition: all 0.4s ease-in-out;
                  transition: all 0.4s ease-in-out;
-                 -webkit-backface-visibility: hidden;
-                 -moz-backface-visibility:  hidden;
-                 -ms-backface-visibility:  hidden;
                  backface-visibility: hidden;
                   &:hover
                   {
-                  -webkit-transform: scale(1.4);
                   transform: scale(1.4);
                   border:1px solid #000;
                   }

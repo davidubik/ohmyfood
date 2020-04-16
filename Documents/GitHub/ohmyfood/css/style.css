@@ -2,11 +2,7 @@
 /*LARGE DESKTOP*/
 /*DESKTOP*/
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background: #559a86;
   font-family: "Baloo 2", cursive;
@@ -19,10 +15,7 @@ header .header__logo .logo__ohmyfood {
 
 /*FOOTER*/
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   position: fixed;
   bottom: 0;
@@ -34,44 +27,26 @@ footer a .btn_footer {
   margin-top: 20%;
 }
 footer a .btn_footer:hover {
-  -webkit-animation: wiggle 1s 1;
   animation: wiggle 1s 1;
 }
 @keyframes wiggle {
   0% {
-    -webkit-transform: rotate(-8deg);
-    -ms-transform: rotate(-8deg);
     transform: rotate(-8deg);
   }
   25% {
-    -webkit-transform: rotate(8deg);
-    -ms-transform: rotate(8deg);
     transform: rotate(8deg);
   }
   50% {
-    -webkit-transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
   }
   75% {
-    -webkit-transform: rotate(4deg);
-    -ms-transform: rotate(4deg);
     transform: rotate(4deg);
   }
   85% {
-    -webkit-transform: rotate(-2deg);
-    -ms-transform: rotate(-2deg);
     transform: rotate(-2deg);
   }
   93% {
-    -webkit-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
     transform: rotate(1deg);
-  }
-  100% {
-    -webkit-transform: rotate(0px);
-    -ms-transform: rotate(0px);
-    transform: rotate(0px);
   }
 }
 
@@ -85,18 +60,9 @@ body {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -178,11 +144,9 @@ a {
   background: #6e4ccd;
   height: 2px;
   transition: right 0.3s ease-out;
-  -webkit-transition: right 0.3s ease-out;
 }
 .titre_chic_deserts:hover:before {
   right: 35%;
-  -webkit-right: 5.6px;
 }
 
 .titre_delice {
@@ -318,17 +282,9 @@ ul li {
   background: #fcdfdb;
   font-family: "Satisfy";
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   box-shadow: 2px 2px 2px 2px grey;
@@ -505,17 +461,11 @@ ul li {
 .note_enchantee .section__logo .fa-music {
   font-size: 4em;
   margin-top: 2%;
-  -o-background-clip: text;
-  -o-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #f25a61, #f25e60, #f68267, #f78f6a);
 }
 .note_enchantee .menu_page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -537,17 +487,9 @@ ul li {
 .chic_francaise {
   background: #fff5fe;
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   box-shadow: 2px 2px 2px 2px grey;
@@ -630,8 +572,6 @@ ul li {
   }
 }
 .chic_francaise .menu_page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -649,17 +589,9 @@ ul li {
 .delice_papilles {
   background: #eceeee;
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   font-family: "Gaegu";
@@ -744,8 +676,6 @@ ul li {
   }
 }
 .delice_papilles .menu_page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -754,17 +684,9 @@ ul li {
 .palette_gout {
   background: #fdfffd;
   width: 55%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 10%;
   font-family: "Caveat Brush";
@@ -892,8 +814,6 @@ ul li {
   }
 }
 .palette_gout .menu_page {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -906,13 +826,10 @@ main section .mentions {
   margin-bottom: 10%;
 }
 
-/*GENERAL*/
+/*INDEX*/
 #container {
   border: 3px solid chartreuse;
   height: 125vh;
-  /*INDEX*/
-  /*HEADER*/
-  /*MAIN & MENU CONTAINER*/
 }
 #container header, #container footer {
   background: #559a86;
@@ -949,17 +866,10 @@ main section .mentions {
   width: 250px;
   box-shadow: 2px 2px 2px 2px grey;
   cursor: pointer;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 #container main .menu__container .containerLien .lien__menus .menu__img:hover {
-  -webkit-transform: scale(1.4);
   transform: scale(1.4);
   border: 1px solid #000;
 }
