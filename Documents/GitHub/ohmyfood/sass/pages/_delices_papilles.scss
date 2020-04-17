@@ -60,4 +60,15 @@
     {
       @include entree_plats_desert_position;
     }
+
+    .delices-plats
+    {
+      @include mobil_menu_width;
+    }
+
+    .delices-entree
+    {
+      @include mobil_menu_width;
+    }
+
   }

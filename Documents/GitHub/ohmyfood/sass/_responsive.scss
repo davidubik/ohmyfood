@@ -30,7 +30,26 @@ $breakpoints :
 }
 
 
- //TABLETS
+ /*TABLETS*/
+
+/*Index*/
+
+ @mixin main_index_tablets
+ {
+   @media screen and(max-width: map-get($breakpoints, tablets))
+   {
+     height: 140vh;
+   }
+ }
+
+ @mixin main_index_mobil
+ {
+   @media screen and(max-width: map-get($breakpoints, mobil))
+   {
+     height: 130vh;
+   }
+ }
+
 
 @mixin tablets-pages
 {
@@ -47,8 +66,8 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
     width: 15%;
-    margin-top: -4.5%;
-    margin-left: 23%;
+    margin-top: -5%;
+    margin-left: 22%;
     position: absolute;
   }
 }
@@ -59,7 +78,7 @@ $breakpoints :
   {
     position: absolute;
     width: 15%;
-    margin-left: 46%;
+    margin-left: 47%;
     margin-top: -4.5%;
   }
 }
@@ -69,11 +88,10 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
     width: 15%;
-    margin-top: -6%;
+    margin-top: -4.5%;
     margin-left: 20%;
     position: absolute;
     background: red;
-
   }
 }
 
@@ -109,6 +127,7 @@ $breakpoints :
     margin-top: -6%;
   }
 }
+
 
 // CHIC À LA FRANÇAISE
 
@@ -184,6 +203,15 @@ $breakpoints :
   }
 }
 
+
+@mixin mobil_menu_width
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    margin-left: -5%;
+  }
+}
+
 @mixin mobil-border-pages-right
 {
   @media screen and (max-width: map-get($breakpoints, mobil))
@@ -205,6 +233,7 @@ $breakpoints :
     position: absolute;
   }
 }
+
 
 @mixin mobil-border-page-right-plats
 {
@@ -284,5 +313,23 @@ $breakpoints :
     width: 15%;
     margin-left: 66%;
     margin-top: -5%;
+  }
+}
+
+/*BOUTON*/
+
+@mixin button_tablets
+{
+  @media screen and(max-width: map-get($breakpoints, tablets))
+  {
+    width: 30%;
+  }
+}
+
+@mixin button_mobil
+{
+  @media screen and(max-width: map-get($breakpoints, mobil))
+  {
+    width: 40%;
   }
 }

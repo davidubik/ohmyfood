@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*LARGE DESKTOP*/
 /*DESKTOP*/
+/*TABLETS*/
+/*Index*/
+/*BOUTON*/
 header {
   display: flex;
   justify-content: center;
@@ -253,6 +256,16 @@ ul li {
   width: 20%;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .btn a .button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn a .button {
+    width: 40%;
+  }
+}
 
 .trois_petits_points {
   animation-name: trois_petits_points_effet;
@@ -322,8 +335,8 @@ ul li {
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left .note_border__svg {
     width: 15%;
-    margin-top: -4.5%;
-    margin-left: 23%;
+    margin-top: -5%;
+    margin-left: 22%;
     position: absolute;
   }
 }
@@ -345,7 +358,7 @@ ul li {
   .note_enchantee .border_texte .border_texte__right .note_border__svg {
     position: absolute;
     width: 15%;
-    margin-left: 46%;
+    margin-left: 47%;
     margin-top: -4.5%;
   }
 }
@@ -366,7 +379,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left--plats {
     width: 15%;
-    margin-top: -6%;
+    margin-top: -4.5%;
     margin-left: 20%;
     position: absolute;
     background: red;
@@ -375,8 +388,8 @@ ul li {
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left--plats {
     width: 15%;
-    margin-top: -4.5%;
-    margin-left: 23%;
+    margin-top: -5%;
+    margin-left: 22%;
     position: absolute;
   }
 }
@@ -468,6 +481,11 @@ ul li {
 .note_enchantee .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .note_enchantee .note-entree, .note_enchantee .note-plats {
+    margin-left: -5%;
+  }
 }
 
 /*logo croche-bas-de-page*/
@@ -575,6 +593,11 @@ ul li {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 576px) {
+  .chic_francaise .chic-plats {
+    margin-left: -5%;
+  }
+}
 .chic_francaise .entree--color {
   color: #c67412;
 }
@@ -678,6 +701,16 @@ ul li {
 .delice_papilles .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .delice_papilles .delices-plats {
+    margin-left: -5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delice_papilles .delices-entree {
+    margin-left: -5%;
+  }
 }
 
 /*LA PALETTE DU GOÛT*/
@@ -840,36 +873,50 @@ main section .mentions {
   margin-top: 2%;
   text-align: center;
 }
-#container main {
+#container #main_index {
   border: 2px solid blue;
-  height: 120vh;
+  height: 150vh;
 }
-#container main .menu__container {
+@media screen and (max-width: 768px) {
+  #container #main_index {
+    height: 140vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  #container #main_index {
+    height: 130vh;
+  }
+}
+#container #main_index .menu__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /*justify-content: space-between;
+  flex-wrap: wrap;*/
 }
-#container main .menu__container .containerLien {
+#container #main_index .menu__container .containerLien {
   overflow: hidden;
-  box-shadow: 3px 3px 3px 0px grey;
+  box-shadow: 3px 3px 3px 2px grey;
   margin: 2%;
   width: 250px;
   overflow: hidden;
 }
-#container main .menu__container .containerLien .lien__menus {
+#container #main_index .menu__container .containerLien .lien__menus {
   overflow: hidden;
   display: inline;
-  background: red;
-  margin: 2%;
 }
-#container main .menu__container .containerLien .lien__menus .menu__img {
-  box-shadow: 3px 3px 3px 3px grey;
-  width: 250px;
+#container #main_index .menu__container .containerLien .lien__menus .menu__img {
+  /*width:250px;*/
+  width: 100%;
   box-shadow: 2px 2px 2px 2px grey;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   backface-visibility: hidden;
 }
-#container main .menu__container .containerLien .lien__menus .menu__img:hover {
+#container #main_index .menu__container .containerLien .lien__menus .menu__img:hover {
   transform: scale(1.4);
   border: 1px solid #000;
+}
+#container #main_index .smallContainer {
+  display: flex;
+  justify-content: center;
 }

@@ -16,6 +16,8 @@
             font-size: 1.5em;
             width: 20%;
             text-align: center;
+            @include button_tablets;
+            @include button_mobil;
           }
       }
   }

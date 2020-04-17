@@ -98,6 +98,11 @@ font-family: 'Satisfy';
   {
    @include entree_plats_desert_position;
   }
+  .note-entree, .note-plats
+  {
+    @include mobil_menu_width;
+  }
+
 }
 
 /*logo croche-bas-de-page*/

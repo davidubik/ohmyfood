@@ -48,6 +48,10 @@
   {
     @include entree_plats_desert_position
   }
+  .chic-plats
+  {
+    @include mobil_menu_width;
+  }
   .entree--color
   {
     color: #c67412;
