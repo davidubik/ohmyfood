@@ -54,7 +54,7 @@ height: 100vh;
       margin-left: 6%;
       position: absolute;
       @include tablets_border_left_delices;
-        @include mobil_border_left_delices;
+      @include mobil_border_left_delices;
     }
     .img__border_right_palette--plats
     {
@@ -70,5 +70,9 @@ height: 100vh;
   .menu_page
   {
     @include entree_plats_desert_position;
+  }
+  .palette_entree
+  {
+    @include mobil_palette_entree;
   }
 }

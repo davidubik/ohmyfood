@@ -91,7 +91,7 @@ $breakpoints :
     margin-top: -4.5%;
     margin-left: 20%;
     position: absolute;
-    background: red;
+  // background: red;
   }
 }
 
@@ -179,6 +179,7 @@ $breakpoints :
 
 // La palette du gout à les mêmes mixins que le délice des papilles
 
+
 //MOBIL
 
 @mixin mobil-pages
@@ -208,7 +209,10 @@ $breakpoints :
 {
   @media screen and (max-width: map-get($breakpoints, mobil))
   {
-    margin-left: -5%;
+    //margin-left: -5%;
+    justify-content: space-around;
+    width: 476px;
+
   }
 }
 
@@ -313,6 +317,16 @@ $breakpoints :
     width: 15%;
     margin-left: 66%;
     margin-top: -5%;
+  }
+}
+
+/*PALETTE DU GOUT ENTREE*/
+
+@mixin mobil_palette_entree
+{
+  @media screen and (max-width: map-get($breakpoints, mobil))
+  {
+    justify-content: space-around;
   }
 }
 

@@ -3,6 +3,7 @@
 /*DESKTOP*/
 /*TABLETS*/
 /*Index*/
+/*PALETTE DU GOUT ENTREE*/
 /*BOUTON*/
 header {
   display: flex;
@@ -382,7 +383,6 @@ ul li {
     margin-top: -4.5%;
     margin-left: 20%;
     position: absolute;
-    background: red;
   }
 }
 @media screen and (max-width: 768px) {
@@ -484,7 +484,8 @@ ul li {
 }
 @media screen and (max-width: 576px) {
   .note_enchantee .note-entree, .note_enchantee .note-plats {
-    margin-left: -5%;
+    justify-content: space-around;
+    width: 476px;
   }
 }
 
@@ -595,7 +596,8 @@ ul li {
 }
 @media screen and (max-width: 576px) {
   .chic_francaise .chic-plats {
-    margin-left: -5%;
+    justify-content: space-around;
+    width: 476px;
   }
 }
 .chic_francaise .entree--color {
@@ -704,12 +706,20 @@ ul li {
 }
 @media screen and (max-width: 576px) {
   .delice_papilles .delices-plats {
-    margin-left: -5%;
+    justify-content: space-around;
+    width: 476px;
   }
 }
 @media screen and (max-width: 576px) {
   .delice_papilles .delices-entree {
-    margin-left: -5%;
+    justify-content: space-around;
+    width: 476px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .delice_papilles .delices-deserts {
+    justify-content: space-around;
+    width: 476px;
   }
 }
 
@@ -849,6 +859,11 @@ ul li {
 .palette_gout .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .palette_gout .palette_entree {
+    justify-content: space-around;
+  }
 }
 
 /*MENTIONS LEGALES*/
