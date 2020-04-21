@@ -66,7 +66,7 @@
      left:40%;
      right:80%;
      bottom:0;
-     background:#000;
+     background:$color_soulignement_note;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -88,7 +88,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(33, 83%, 42%, 1);
+     background: $color_soulignement1;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -110,7 +110,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(312, 26%, 53%, 1);
+     background:$color_soulignement2;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -132,7 +132,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(256, 56%, 55%, 1);
+     background:$color_soulignement3;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -154,7 +154,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(230, 98%, 44%, 1);
+     background:$color_soulignement_delice1;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -176,7 +176,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(213, 95%, 49%, 1);
+     background:$color_soulignement_delice2 ;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -199,7 +199,7 @@
      left:35%;
      right:80%;
      bottom:0;
-     background:hsla(206, 95%, 55%, 1);
+     background:$color_soulignement_delice3;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -225,7 +225,7 @@
      left:41%;
      right:60%;
      bottom:0;
-     background:hsla(139, 80%, 43%, 1);
+     background:$color_soulignement_palette;
      height:2px;
      transition:right 0.3s ease-out;
   }
@@ -278,6 +278,6 @@ transform: rotate(1deg);
 
 @mixin zoom_pour_img
 {
-  transform: scale(1.20);
-  transition: transform 1000ms;
+  transform: scale(1.4);
+  border:1px solid #000;
 }

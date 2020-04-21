@@ -2,10 +2,10 @@
     /*LE DÉLICE DES PAPILLES*/
   .delice_papilles
   {
-    background: #eceeee;
+    background: $color_background_delice;
     @include menu_position_taille;
     font-family: 'Gaegu';
-    box-shadow: 3px 3px 3px 3px grey;
+    @include border_shadow_menu;
     height: 100vh;
     @include large-desktop;
     @include desktop-pages;

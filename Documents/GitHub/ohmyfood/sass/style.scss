@@ -19,7 +19,6 @@
 
 #container
 {
-  border: 3px solid chartreuse;
   height: 125vh;
     header, footer
     {
@@ -35,7 +34,6 @@
 
       #main_index
       {
-        border: 2px solid blue;
         height: 150vh;
         @include main_index_tablets;
         @include main_index_mobil;
@@ -44,8 +42,6 @@
         {
           display: flex;
           flex-direction: column;
-          /*justify-content: space-between;
-          flex-wrap: wrap;*/
 
           .containerLien
           {
@@ -69,8 +65,7 @@
                  backface-visibility: hidden;
                   &:hover
                   {
-                  transform: scale(1.4);
-                  border:1px solid #000;
+                  @include zoom_pour_img;
                   }
               }
             }

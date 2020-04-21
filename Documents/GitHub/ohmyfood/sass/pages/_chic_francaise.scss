@@ -3,7 +3,7 @@
 
 .chic_francaise
 {
-  background: #fff5fe;
+  background: $background_color_chic;
   @include menu_position_taille;
   @include border_shadow_menu;
   height: 100vh;

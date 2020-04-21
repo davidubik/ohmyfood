@@ -2,7 +2,7 @@
 
 .note_enchantee
 {
-background: #fcdfdb;
+background: $color_background_note;
 font-family: 'Satisfy';
 @include menu_position_taille;
 @include border_shadow_menu;

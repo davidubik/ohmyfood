@@ -2,7 +2,7 @@
 
 .palette_gout
 {
-background: #fdfffd;
+background: $background_color_palette;
 @include menu_position_taille;
 font-family: 'Caveat Brush', ;
 @include border_shadow_menu;
