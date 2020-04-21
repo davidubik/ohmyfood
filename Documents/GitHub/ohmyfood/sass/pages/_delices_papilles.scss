@@ -20,9 +20,7 @@
 
         .logo_papilles
         {
-          background: -webkit-linear-gradient(#0228dd, #6b6beb,#dbeaf4);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          @include delice_logo_size_color;
         }
       }
     }
@@ -34,10 +32,7 @@
 
       .size_border_left_delices
       {
-        width: 15%;
-        margin-top: -2.5%;
-        margin-left: 4%;
-        position: absolute;
+        @include delice_border_left;
         @include tablets_border_left_delices;
         @include mobil_border_left_delices;
       }
@@ -47,10 +42,7 @@
     {
       .size_border_right_delices
       {
-        position: absolute;
-        width: 15%;
-        margin-left: 36%;
-        margin-top: -2.5%;
+        @include delice_border_right;
         @include tablets_border_right_delices;
         @include mobil_border_right_delices;
       }

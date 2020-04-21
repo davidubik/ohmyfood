@@ -3,6 +3,9 @@
 /*CHIC À LA FRANÇAISE*/
 /*DÉLICE DES PAPILLES*/
 /*PALETTE DU GOÛT*/
+/* NOTe ENCHANTÉE */
+/*DÉLICE DES PAPILLES*/
+/*PALETTE DU GOÛT*/
 /*LARGE DESKTOP*/
 /*DESKTOP*/
 /*TABLETS*/
@@ -91,7 +94,7 @@ a {
   left: 40%;
   right: 80%;
   bottom: 0;
-  background: #000;
+  background: black;
   height: 2px;
   transition: right 0.3s ease-out;
 }
@@ -739,6 +742,7 @@ ul li {
   font-family: "Caveat Brush";
   box-shadow: 2px 2px 2px 2px grey;
   height: 100vh;
+  /* La section déserts à la même class que les plats */
 }
 @media screen and (min-width: 1200px) {
   .palette_gout {
