@@ -58,6 +58,8 @@ height: 100vh;
   .menu_page
   {
     @include entree_plats_desert_position;
+    @include desktop_plats_position;
+    @include tablets_plats_position;
   }
   .palette_entree
   {

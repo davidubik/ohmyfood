@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Zone de recherche*/
 /* NOTe ENCHANTÉE*/
 /*CHIC À LA FRANÇAISE*/
 /*DÉLICE DES PAPILLES*/
@@ -8,6 +9,7 @@
 /*PALETTE DU GOÛT*/
 /*LARGE DESKTOP*/
 /*DESKTOP*/
+/*CHIC A LA FRANÇAISE*/
 /*TABLETS*/
 /*Index*/
 /*PALETTE DU GOUT ENTREE*/
@@ -343,7 +345,7 @@ ul li {
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left .note_border__svg {
     width: 15%;
-    margin-top: -5%;
+    margin-top: -4.5%;
     margin-left: 22%;
     position: absolute;
   }
@@ -387,16 +389,8 @@ ul li {
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left--plats {
     width: 15%;
-    margin-top: -4.5%;
+    margin-top: -6%;
     margin-left: 20%;
-    position: absolute;
-  }
-}
-@media screen and (max-width: 768px) {
-  .note_enchantee .border_texte .border_texte__left--plats {
-    width: 15%;
-    margin-top: -5%;
-    margin-left: 22%;
     position: absolute;
   }
 }
@@ -418,7 +412,7 @@ ul li {
   .note_enchantee .border_texte .border_texte__right--plats {
     position: absolute;
     width: 15%;
-    margin-left: 49%;
+    margin-left: 50%;
     margin-top: -6%;
   }
 }
@@ -462,7 +456,7 @@ ul li {
   .note_enchantee .border_texte .border_texte__right--deserts {
     position: absolute;
     width: 15%;
-    margin-left: 50%;
+    margin-left: 51%;
     margin-top: -6%;
   }
 }
@@ -488,6 +482,18 @@ ul li {
 .note_enchantee .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .note_enchantee .menu_page {
+    justify-content: space-around;
+    margin-left: -6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .note_enchantee .menu_page {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .note_enchantee .note-entree, .note_enchantee .note-plats {
@@ -559,6 +565,14 @@ ul li {
   margin-top: -3%;
   position: absolute;
 }
+@media screen and (max-width: 992px) {
+  .chic_francaise .border_left_chic {
+    width: 16%;
+    margin-left: 0%;
+    margin-top: -4%;
+    position: absolute;
+  }
+}
 @media screen and (max-width: 768px) {
   .chic_francaise .border_left_chic {
     width: 16%;
@@ -581,6 +595,14 @@ ul li {
   margin-left: 36%;
   margin-top: -3%;
 }
+@media screen and (max-width: 992px) {
+  .chic_francaise .border_right_chic {
+    position: absolute;
+    width: 15%;
+    margin-left: 39%;
+    margin-top: -4%;
+  }
+}
 @media screen and (max-width: 768px) {
   .chic_francaise .border_right_chic {
     position: absolute;
@@ -600,6 +622,18 @@ ul li {
 .chic_francaise .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .chic_francaise .menu_page {
+    justify-content: space-around;
+    margin-left: -6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chic_francaise .menu_page {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .chic_francaise .chic-plats {
@@ -710,6 +744,18 @@ ul li {
 .delice_papilles .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .delice_papilles .menu_page {
+    justify-content: space-around;
+    margin-left: -6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .delice_papilles .menu_page {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .delice_papilles .delices-plats {
@@ -867,6 +913,18 @@ ul li {
 .palette_gout .menu_page {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .palette_gout .menu_page {
+    justify-content: space-around;
+    margin-left: -6%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .palette_gout .menu_page {
+    justify-content: space-evenly;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .palette_gout .palette_entree {

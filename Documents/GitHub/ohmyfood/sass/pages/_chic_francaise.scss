@@ -31,13 +31,16 @@
     .border_left_chic
     {
       @include border_left_chic;
+      @include desktop_border_left_entree;
       @include tablets_border_left_chic;
       @include mobil_border_left_chic;
     }
 
+
     .border_right_chic
     {
       @include border_right_chic;
+      @include desktop_border_right_entree;
       @include tablets_border_right_chic;
       @include mobil_border_right_chic;
 
@@ -46,7 +49,9 @@
 
   .menu_page
   {
-    @include entree_plats_desert_position
+    @include entree_plats_desert_position;
+    @include desktop_plats_position;
+    @include tablets_plats_position;
   }
   .chic-plats
   {

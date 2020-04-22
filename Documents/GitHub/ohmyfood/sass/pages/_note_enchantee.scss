@@ -39,7 +39,7 @@ font-family: 'Satisfy';
  {
    @include note_border_left_plats;
    @include tablets-border-page-left-plats;
-    @include tablets-border-pages-left;
+    // @include tablets-border-pages-left;
     @include mobil-border-page-left-plats;
 
  }
@@ -81,6 +81,8 @@ font-family: 'Satisfy';
   .menu_page
   {
    @include entree_plats_desert_position;
+   @include desktop_plats_position;
+   @include tablets_plats_position;
   }
   .note-entree, .note-plats
   {

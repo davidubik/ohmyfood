@@ -29,6 +29,39 @@ $breakpoints :
   }
 }
 
+/*CHIC A LA FRANÇAISE*/
+
+@mixin desktop_border_left_entree
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    width: 16%;
+    margin-left: 0%;
+    margin-top: -4%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_entree
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 39%;
+    margin-top: -4%;
+  }
+}
+
+@mixin desktop_plats_position /* PROPRIÉTÉES APPLIQUER AUX AUTRES PAGES */
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    justify-content: space-around;
+    margin-left: -6%;
+  }
+}
+
 
  /*TABLETS*/
 
@@ -66,9 +99,18 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
     width: 15%;
-    margin-top: -5%;
+    margin-top: -4.5%;
     margin-left: 22%;
     position: absolute;
+  }
+}
+
+@mixin tablets_plats_position
+{
+  @media screen and (max-width: map-get($breakpoints, tablets))
+  {
+    justify-content: space-evenly;
+    margin-left: 0;
   }
 }
 
@@ -88,10 +130,9 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
     width: 15%;
-    margin-top: -4.5%;
+    margin-top: -6%;
     margin-left: 20%;
     position: absolute;
-  // background: red;
   }
 }
 
@@ -101,7 +142,7 @@ $breakpoints :
   {
     position: absolute;
     width: 15%;
-    margin-left: 49%;
+    margin-left: 50%;
     margin-top: -6%;
   }
 }
@@ -123,13 +164,15 @@ $breakpoints :
   {
     position: absolute;
     width: 15%;
-    margin-left: 50%;
+    margin-left: 51%;
     margin-top: -6%;
   }
 }
 
 
 // CHIC À LA FRANÇAISE
+
+
 
 @mixin tablets_border_left_chic
 {
