@@ -21,6 +21,7 @@ font-family: 'Satisfy';
    .note_border__svg
    {
      @include note_svg_size_position_left;
+     @include desktop_border_left_note;
      @include tablets-border-pages-left;
      @include mobil-border-pages-left;
    }
@@ -30,6 +31,7 @@ font-family: 'Satisfy';
    .note_border__svg
    {
      @include note_svg_size_position_right;
+     @include desktop_border_right_note_entree;
      @include tablets-border-pages-right;
      @include mobil-border-pages-right;
    }
@@ -38,8 +40,8 @@ font-family: 'Satisfy';
  .border_texte__left--plats
  {
    @include note_border_left_plats;
+   @include desktop_border_left_note_plats;
    @include tablets-border-page-left-plats;
-    // @include tablets-border-pages-left;
     @include mobil-border-page-left-plats;
 
  }
@@ -47,6 +49,7 @@ font-family: 'Satisfy';
  .border_texte__right--plats
  {
    @include note_border_right_plats;
+   @include desktop_border_right_note_plats;
    @include tablets-border-page-right-plats;
    @include mobil-border-page-right-plats;
 
@@ -55,6 +58,7 @@ font-family: 'Satisfy';
  .border_texte__left--deserts
  {
   @include note_border_left_deserts;
+  @include desktop_border_left_note_deserts;
   @include tablets-border-pages-left-deserts;
   @include mobil-border-pages-left-deserts;
 
@@ -62,6 +66,7 @@ font-family: 'Satisfy';
  .border_texte__right--deserts
  {
    @include note_border_right_deserts;
+   @include desktop_border_right_note_deserts;
    @include tablets-border-page-right-deserts;
    @include mobil-border-page-right-deserts;
  }

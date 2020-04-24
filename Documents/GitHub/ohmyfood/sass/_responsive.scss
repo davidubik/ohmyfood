@@ -25,7 +25,7 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, desktop))
   {
     background: rgba(139, 226, 229, 0.84);
-    width: 55%;
+    width: 75%;
   }
 }
 
@@ -53,14 +53,88 @@ $breakpoints :
   }
 }
 
-@mixin desktop_plats_position /* PROPRIÉTÉES APPLIQUER AUX AUTRES PAGES */
+/* Note ENCHANTÉE */
+
+@mixin desktop_border_left_note
+{
+    @media screen and (max-width: map-get($breakpoints, desktop))
+    {
+      width: 15%;
+      margin-top: -3.5%;
+      margin-left: 17%;
+      position: absolute;
+    }
+}
+
+@mixin desktop_border_right_note_entree
 {
   @media screen and (max-width: map-get($breakpoints, desktop))
   {
-    justify-content: space-around;
-    margin-left: -6%;
+    position: absolute;
+    width: 15%;
+    margin-left: 43%;
+    margin-top: -3.5%;
   }
 }
+
+@mixin desktop_border_left_note_plats
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 15%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_note_plats
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 45%;
+    margin-top: -5%;
+  }
+}
+
+@mixin desktop_border_left_note_deserts
+{
+  @media screen and (max-width: map-get($breakpoints,desktop))
+  {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_note_deserts
+{
+  @media screen and (max-width: map-get($breakpoints,desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 47%;
+    margin-top: -5%;
+  }
+}
+
+
+
+
+@mixin desktop_plats_position /* PROPRIÉTÉES APPLIQUER à TOUTES LES PAGES */
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    justify-content: center;
+    //margin-left: -6%;
+
+  }
+}
+
+
 
 
  /*TABLETS*/
@@ -173,6 +247,27 @@ $breakpoints :
 // CHIC À LA FRANÇAISE
 
 
+@mixin desktop_border_left_chic
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    width: 14%;
+    margin-left: 12%;
+    margin-top: -4%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_chic
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 49%;
+    margin-top: -4%;
+  }
+}
 
 @mixin tablets_border_left_chic
 {
@@ -196,7 +291,29 @@ $breakpoints :
     }
 }
 
-// LE DÉLICES DES PAPILLES
+// LE DÉLICE DES PAPILLES
+
+@mixin desktop_border_left_delice
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    width: 15%;
+    margin-top: -3.5%;
+    margin-left: 11%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_delice
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 49%;
+    margin-top: -3.5%;
+  }
+}
 
 @mixin tablets_border_left_delices
 {
@@ -221,6 +338,52 @@ $breakpoints :
 }
 
 // La palette du gout à les mêmes mixins que le délice des papilles
+
+/* PALETTE DU GOÛT */
+
+@mixin desktop_border_left_palette
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    width: 15%;
+    margin-top: -3%;
+    margin-left: 17%;
+    position: absolute;
+  }
+}
+
+@mixin desktop_border_right_palette
+{
+  @media screen and (max-width: map-get($breakpoints, desktop))
+  {
+    position: absolute;
+    width: 15%;
+    margin-left: 42%;
+    margin-top: -3%;
+  }
+}
+
+ @mixin desktop_border_left_palette_plats-deserts
+ {
+   @media screen and (max-width: map-get($breakpoints, desktop))
+   {
+     width: 15%;
+     margin-top: -3%;
+     margin-left: 16%;
+     position: absolute;
+   }
+ }
+
+ @mixin desktop_border_right_palette_plats-deserts
+ {
+   @media screen and (max-width: map-get($breakpoints, desktop))
+   {
+     position: absolute;
+     width: 15%;
+     margin-left: 44%;
+     margin-top: -3%;
+   }
+ }
 
 
 //MOBIL

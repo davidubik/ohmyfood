@@ -30,24 +30,28 @@ height: 100vh;
     .img__border_left_palette
     {
       @include palette_border_left_entree;
+      @include desktop_border_left_palette;
       @include tablets_border_left_delices;
       @include mobil_border_left_delices;
     }
     .img__border_right_palette
     {
       @include palette_border_right_entree;
+      @include desktop_border_right_palette;
       @include tablets_border_right_delices;
       @include mobil_border_right_delices;
     }
     .img__border_left_palette--plats
     {
       @include palette_border_left_plats;
+      @include desktop_border_left_palette_plats-deserts;
       @include tablets_border_left_delices;
       @include mobil_border_left_delices;
     }
     .img__border_right_palette--plats
     {
       @include palette_border_right_plats;
+      @include desktop_border_right_palette_plats-deserts;
       @include tablets_border_right_delices;
       @include mobil_border_right_delices;
     }

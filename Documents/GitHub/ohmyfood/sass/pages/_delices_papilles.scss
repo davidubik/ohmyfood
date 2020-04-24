@@ -33,6 +33,7 @@
       .size_border_left_delices
       {
         @include delice_border_left;
+        @include desktop_border_left_delice;
         @include tablets_border_left_delices;
         @include mobil_border_left_delices;
       }
@@ -43,6 +44,7 @@
       .size_border_right_delices
       {
         @include delice_border_right;
+        @include desktop_border_right_delice;
         @include tablets_border_right_delices;
         @include mobil_border_right_delices;
       }

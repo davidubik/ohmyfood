@@ -10,8 +10,10 @@
 /*LARGE DESKTOP*/
 /*DESKTOP*/
 /*CHIC A LA FRANÇAISE*/
+/* Note ENCHANTÉE */
 /*TABLETS*/
 /*Index*/
+/* PALETTE DU GOÛT */
 /*PALETTE DU GOUT ENTREE*/
 /*BOUTON*/
 header {
@@ -321,7 +323,7 @@ ul li {
 @media screen and (max-width: 992px) {
   .note_enchantee {
     background: rgba(139, 226, 229, 0.84);
-    width: 55%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -341,6 +343,14 @@ ul li {
   margin-top: -2.5%;
   margin-left: 8%;
   position: absolute;
+}
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__left .note_border__svg {
+    width: 15%;
+    margin-top: -3.5%;
+    margin-left: 17%;
+    position: absolute;
+  }
 }
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left .note_border__svg {
@@ -364,6 +374,14 @@ ul li {
   margin-left: 32%;
   margin-top: -2.5%;
 }
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__right .note_border__svg {
+    position: absolute;
+    width: 15%;
+    margin-left: 43%;
+    margin-top: -3.5%;
+  }
+}
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__right .note_border__svg {
     position: absolute;
@@ -385,6 +403,14 @@ ul li {
   margin-top: -3.5%;
   margin-left: 7%;
   position: absolute;
+}
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__left--plats {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 15%;
+    position: absolute;
+  }
 }
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left--plats {
@@ -408,6 +434,14 @@ ul li {
   margin-left: 33%;
   margin-top: -3.5%;
 }
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__right--plats {
+    position: absolute;
+    width: 15%;
+    margin-left: 45%;
+    margin-top: -5%;
+  }
+}
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__right--plats {
     position: absolute;
@@ -430,6 +464,14 @@ ul li {
   margin-left: 6%;
   position: absolute;
 }
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__left--deserts {
+    width: 15%;
+    margin-top: -5%;
+    margin-left: 13%;
+    position: absolute;
+  }
+}
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__left--deserts {
     width: 15%;
@@ -451,6 +493,14 @@ ul li {
   width: 15%;
   margin-left: 34%;
   margin-top: -3.5%;
+}
+@media screen and (max-width: 992px) {
+  .note_enchantee .border_texte .border_texte__right--deserts {
+    position: absolute;
+    width: 15%;
+    margin-left: 47%;
+    margin-top: -5%;
+  }
 }
 @media screen and (max-width: 768px) {
   .note_enchantee .border_texte .border_texte__right--deserts {
@@ -485,8 +535,7 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .note_enchantee .menu_page {
-    justify-content: space-around;
-    margin-left: -6%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -535,7 +584,7 @@ ul li {
 @media screen and (max-width: 992px) {
   .chic_francaise {
     background: rgba(139, 226, 229, 0.84);
-    width: 55%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -567,8 +616,8 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .chic_francaise .border_left_chic {
-    width: 16%;
-    margin-left: 0%;
+    width: 14%;
+    margin-left: 12%;
     margin-top: -4%;
     position: absolute;
   }
@@ -599,7 +648,7 @@ ul li {
   .chic_francaise .border_right_chic {
     position: absolute;
     width: 15%;
-    margin-left: 39%;
+    margin-left: 49%;
     margin-top: -4%;
   }
 }
@@ -625,8 +674,7 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .chic_francaise .menu_page {
-    justify-content: space-around;
-    margin-left: -6%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -673,7 +721,7 @@ ul li {
 @media screen and (max-width: 992px) {
   .delice_papilles {
     background: rgba(139, 226, 229, 0.84);
-    width: 55%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -703,6 +751,14 @@ ul li {
   margin-left: 4%;
   position: absolute;
 }
+@media screen and (max-width: 992px) {
+  .delice_papilles .border_left_delices .size_border_left_delices {
+    width: 15%;
+    margin-top: -3.5%;
+    margin-left: 11%;
+    position: absolute;
+  }
+}
 @media screen and (max-width: 768px) {
   .delice_papilles .border_left_delices .size_border_left_delices {
     width: 15%;
@@ -724,6 +780,14 @@ ul li {
   width: 15%;
   margin-left: 36%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 992px) {
+  .delice_papilles .border_right_delices .size_border_right_delices {
+    position: absolute;
+    width: 15%;
+    margin-left: 49%;
+    margin-top: -3.5%;
+  }
 }
 @media screen and (max-width: 768px) {
   .delice_papilles .border_right_delices .size_border_right_delices {
@@ -747,8 +811,7 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .delice_papilles .menu_page {
-    justify-content: space-around;
-    margin-left: -6%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -798,7 +861,7 @@ ul li {
 @media screen and (max-width: 992px) {
   .palette_gout {
     background: rgba(139, 226, 229, 0.84);
-    width: 55%;
+    width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -828,6 +891,14 @@ ul li {
   margin-left: 8%;
   position: absolute;
 }
+@media screen and (max-width: 992px) {
+  .palette_gout .border_palette .img__border_left_palette {
+    width: 15%;
+    margin-top: -3%;
+    margin-left: 17%;
+    position: absolute;
+  }
+}
 @media screen and (max-width: 768px) {
   .palette_gout .border_palette .img__border_left_palette {
     width: 15%;
@@ -849,6 +920,14 @@ ul li {
   width: 15%;
   margin-left: 32%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 992px) {
+  .palette_gout .border_palette .img__border_right_palette {
+    position: absolute;
+    width: 15%;
+    margin-left: 42%;
+    margin-top: -3%;
+  }
 }
 @media screen and (max-width: 768px) {
   .palette_gout .border_palette .img__border_right_palette {
@@ -872,6 +951,14 @@ ul li {
   margin-left: 6%;
   position: absolute;
 }
+@media screen and (max-width: 992px) {
+  .palette_gout .border_palette .img__border_left_palette--plats {
+    width: 15%;
+    margin-top: -3%;
+    margin-left: 16%;
+    position: absolute;
+  }
+}
 @media screen and (max-width: 768px) {
   .palette_gout .border_palette .img__border_left_palette--plats {
     width: 15%;
@@ -893,6 +980,14 @@ ul li {
   width: 15%;
   margin-left: 33%;
   margin-top: -2.5%;
+}
+@media screen and (max-width: 992px) {
+  .palette_gout .border_palette .img__border_right_palette--plats {
+    position: absolute;
+    width: 15%;
+    margin-left: 44%;
+    margin-top: -3%;
+  }
 }
 @media screen and (max-width: 768px) {
   .palette_gout .border_palette .img__border_right_palette--plats {
@@ -916,8 +1011,7 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .palette_gout .menu_page {
-    justify-content: space-around;
-    margin-left: -6%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
