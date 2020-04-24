@@ -55,21 +55,22 @@
       @include entree_plats_desert_position;
       @include desktop_plats_position;
       @include tablets_plats_position;
+      @include mobil_plats_position_delice;
     }
 
-    .delices-plats
-    {
-      @include mobil_menu_width;
-    }
+    // .delices-plats
+    // {
+    //   @include mobil_menu_width;
+    // }
 
-    .delices-entree
-    {
-      @include mobil_menu_width;
-    }
-
-    .delices-deserts
-    {
-      @include mobil_menu_width;
-    }
+    // .delices-entree
+    // {
+    //   @include mobil_menu_width;
+    // }
+    //
+    // .delices-deserts
+    // {
+    //   @include mobil_menu_width;
+    // }
 
   }

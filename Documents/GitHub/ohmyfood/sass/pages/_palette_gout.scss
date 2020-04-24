@@ -64,9 +64,10 @@ height: 100vh;
     @include entree_plats_desert_position;
     @include desktop_plats_position;
     @include tablets_plats_position;
+    @include mobil_plats_position_palette;
   }
-  .palette_entree
-  {
-    @include mobil_palette_entree;
-  }
+  // .palette_entree
+  // {
+  //   @include mobil_palette_entree;
+  // }
 }

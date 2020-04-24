@@ -52,11 +52,12 @@
     @include entree_plats_desert_position;
     @include desktop_plats_position;
     @include tablets_plats_position;
+    @include mobil_plats_position_chic;
   }
-  .chic-plats
-  {
-    @include mobil_menu_width;
-  }
+  // .chic-plats
+  // {
+  //   // @include mobil_menu_width;
+  // }
   .entree--color
   {
     color: #c67412;
