@@ -323,19 +323,16 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .note_enchantee {
-    background: rgba(139, 226, 229, 0.84);
     width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
   .note_enchantee {
-    background: beige;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .note_enchantee {
-    background: orange;
     width: 100%;
   }
 }
@@ -584,19 +581,16 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .chic_francaise {
-    background: rgba(139, 226, 229, 0.84);
     width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
   .chic_francaise {
-    background: beige;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .chic_francaise {
-    background: orange;
     width: 100%;
   }
 }
@@ -721,19 +715,16 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .delice_papilles {
-    background: rgba(139, 226, 229, 0.84);
     width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
   .delice_papilles {
-    background: beige;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .delice_papilles {
-    background: orange;
     width: 100%;
   }
 }
@@ -849,19 +840,16 @@ ul li {
 }
 @media screen and (max-width: 992px) {
   .palette_gout {
-    background: rgba(139, 226, 229, 0.84);
     width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
   .palette_gout {
-    background: beige;
     width: 85%;
   }
 }
 @media screen and (max-width: 576px) {
   .palette_gout {
-    background: orange;
     width: 100%;
   }
 }

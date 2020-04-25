@@ -24,7 +24,6 @@ $breakpoints :
 {
   @media screen and (max-width: map-get($breakpoints, desktop))
   {
-    background: rgba(139, 226, 229, 0.84);
     width: 75%;
   }
 }
@@ -162,7 +161,6 @@ $breakpoints :
 {
   @media screen and (max-width: map-get($breakpoints, tablets))
   {
-    background: beige;
     width: 85%;
 
   }
@@ -392,7 +390,6 @@ $breakpoints :
 {
     @media screen and (max-width: map-get($breakpoints, mobil))
     {
-      background: orange;
       width: 100%;
     }
 }
