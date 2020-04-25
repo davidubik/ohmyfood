@@ -474,6 +474,7 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, mobil))
   {
     justify-content: center;
+    font-size: $fontSizeMobil;
   }
 }
 
@@ -506,6 +507,7 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, mobil))
   {
     justify-content: center;
+    font-size: $fontSizeMobil;
   }
 }
 
@@ -538,7 +540,7 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, mobil))
   {
      justify-content: center;
-     font-size: .9em;
+     font-size:$fontSizeMobil;
   }
 }
 
@@ -557,6 +559,7 @@ $breakpoints :
   @media screen and (max-width: map-get($breakpoints, mobil))
   {
     justify-content: center;
+    font-size: $fontSizeMobil;
   }
 }
 

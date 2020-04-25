@@ -4,6 +4,7 @@
 /*CHIC À LA FRANÇAISE*/
 /*DÉLICE DES PAPILLES*/
 /*PALETTE DU GOÛT*/
+/* font-size : mobil*/
 /* NOTe ENCHANTÉE */
 /*DÉLICE DES PAPILLES*/
 /*PALETTE DU GOÛT*/
@@ -547,6 +548,7 @@ ul li {
 @media screen and (max-width: 576px) {
   .note_enchantee .menu_page {
     justify-content: center;
+    font-size: 0.9em;
   }
 }
 
@@ -685,6 +687,7 @@ ul li {
 @media screen and (max-width: 576px) {
   .chic_francaise .menu_page {
     justify-content: center;
+    font-size: 0.9em;
   }
 }
 .chic_francaise .entree--color {
@@ -1009,6 +1012,7 @@ ul li {
 @media screen and (max-width: 576px) {
   .palette_gout .menu_page {
     justify-content: center;
+    font-size: 0.9em;
   }
 }
 
