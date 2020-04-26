@@ -1,2 +1,2 @@
 # ohmyfood
-Projet 3 de la formation developpeur web chez OpenClassRooms
+Projet 3 de la formation Développeur Web  chez  OpenClassRooms
